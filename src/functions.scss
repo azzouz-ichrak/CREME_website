@@ -1,0 +1,94 @@
+//  --------- colors --------
+$blue: #0061ab;
+$darkBlue: #152848;
+$lightBlue : #b4c8d833;
+$green: #66a344;
+$white: #ffffff;
+$grey: #eff3f7;
+$borderColor: #f5f5f5;
+
+
+//  --------- commun elements --------
+* {
+    font-family: Roboto;
+}
+a:hover {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: $blue;
+}
+.container-fluid,
+p,
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+//  --------- mixin function --------
+
+@mixin flexibleRow() {
+    display: flex;
+    flex-direction: row;
+}
+@mixin pFooter() {
+    color: $white;
+    text-align: justify;
+}
+@mixin boxShadow() {
+    box-shadow: 3px 3px 6px #00000029;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+@mixin section() {
+    padding: 80px 0;
+    .row{
+        margin-bottom: 20px;
+        h2,img,h3{
+            margin: auto;
+            color: $blue;
+            text-align: center ;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+}
+
+//  --------- media-query --------
+
+$media-queries: (
+    tablet: (
+      breakpoint: '(min-width: 480px) and (max-width: 768px)',
+    ),
+    mobile: (
+      breakpoint: '(min-width: 320px) and (max-width: 480px)'
+    )
+  );
+  
+  @mixin media-query ($size) {
+  
+    @each $item, $value in $media-queries {
+  
+      @if $item == $size {
+  
+        @if map-get($value, breakpoint) != null {
+  
+          @media only screen and #{map-get($value, breakpoint)} {
+  
+            @content;
+  
+          }
+  
+        }
+  
+      }
+  
+    }
+  
+  }
