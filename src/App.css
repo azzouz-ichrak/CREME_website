@@ -233,14 +233,26 @@ p,
         font-size: 12px; } }
 #accueil .section-apropos {
   padding: 80px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-apropos {
+      padding: 20px 15px; } }
   #accueil .section-apropos .row {
     margin-bottom: 20px; }
     #accueil .section-apropos .row h2, #accueil .section-apropos .row img, #accueil .section-apropos .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-apropos .row h2 {
+        font-size: 18px; } }
     #accueil .section-apropos .row h3 {
       font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-apropos .row h3 {
+          font-size: 16px; } }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-apropos-part-2 {
+      display: none; } }
   #accueil .section-apropos-part-2 .col {
     width: 50% !important; }
     #accueil .section-apropos-part-2 .col img {
@@ -260,17 +272,46 @@ p,
       #accueil .section-apropos-part-2 .col a:hover {
         box-shadow: 3px 3px 6px #00000029;
         padding: 12px 17px; }
+  #accueil .section-apropos #display-mobile {
+    display: none; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-apropos #display-mobile {
+        display: block; } }
+    #accueil .section-apropos #display-mobile .row img {
+      width: 100% !important;
+      margin: 0 !important; }
+    #accueil .section-apropos #display-mobile .row p {
+      font-size: 10px;
+      text-align: justify; }
+    #accueil .section-apropos #display-mobile .row a {
+      text-align: center;
+      margin: auto;
+      background-color: #66a344;
+      padding: 6px 10px;
+      border-radius: 12px;
+      color: #ffffff;
+      font-size: 14px;
+      box-shadow: 3px 3px 6px #00000029; }
 #accueil .section-objectifs {
   background-color: #b4c8d833;
   padding: 80px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-objectifs {
+      padding: 20px 15px; } }
   #accueil .section-objectifs .row {
     margin-bottom: 20px; }
     #accueil .section-objectifs .row h2, #accueil .section-objectifs .row img, #accueil .section-objectifs .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-objectifs .row h2 {
+        font-size: 18px; } }
     #accueil .section-objectifs .row h3 {
       font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-objectifs .row h3 {
+          font-size: 16px; } }
   #accueil .section-objectifs .col {
     margin: 25px;
     margin-bottom: 0;
@@ -283,21 +324,38 @@ p,
     #accueil .section-objectifs .col:hover {
       box-shadow: 3px 3px 6px #00000029;
       padding: 32px; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-objectifs .col h3 {
+        font-size: 11px !important; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-objectifs .col {
+        margin: 10px !important;
+        padding: 8px !important; } }
 #accueil .section-activites {
   padding: 80px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-activites {
+      padding: 20px 15px; } }
   #accueil .section-activites .row {
     margin-bottom: 20px; }
     #accueil .section-activites .row h2, #accueil .section-activites .row img, #accueil .section-activites .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-activites .row h2 {
+        font-size: 18px; } }
     #accueil .section-activites .row h3 {
       font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-activites .row h3 {
+          font-size: 16px; } }
   #accueil .section-activites .act-1 {
     margin-right: 80px; }
   #accueil .section-activites .act-2 {
     margin-left: 80px; }
-  #accueil .section-activites .act-1, #accueil .section-activites .act-2 {
+  #accueil .section-activites .act-1,
+  #accueil .section-activites .act-2 {
     background-color: #0061ab;
     width: 50%;
     margin-top: 20px;
@@ -307,15 +365,24 @@ p,
     -ms-border-radius: 10px;
     border-radius: 10px;
     text-align: center; }
-    #accueil .section-activites .act-1 a, #accueil .section-activites .act-2 a {
+    #accueil .section-activites .act-1 a,
+    #accueil .section-activites .act-2 a {
       color: #ffffff;
       text-transform: capitalize; }
-    #accueil .section-activites .act-1:hover, #accueil .section-activites .act-2:hover {
+    #accueil .section-activites .act-1:hover,
+    #accueil .section-activites .act-2:hover {
       background-color: #ffffff;
       border: 2px solid #0061ab; }
-      #accueil .section-activites .act-1:hover a, #accueil .section-activites .act-2:hover a {
+      #accueil .section-activites .act-1:hover a,
+      #accueil .section-activites .act-2:hover a {
         color: #0061ab;
         font-size: 1.08em; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-activites .act-1,
+      #accueil .section-activites .act-2 {
+        margin: 4px;
+        padding: 15px 8px;
+        font-size: 14px; } }
 #accueil .section-rejoindre {
   background-image: url("./components//images/metouia.png");
   background-size: cover;
@@ -324,9 +391,20 @@ p,
   background-attachment: fixed;
   background-position: center center;
   padding: 50px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-rejoindre {
+      background-size: inherit;
+      height: 200px; } }
   #accueil .section-rejoindre .row {
     color: #ffffff;
     width: 40%; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-rejoindre .row {
+        width: 100%;
+        font-size: 22px; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-rejoindre .row h2 {
+        font-size: 22px; } }
   #accueil .section-rejoindre .btn-rejoindre {
     margin: auto;
     margin-top: 20px;
@@ -339,20 +417,32 @@ p,
     border-radius: 10px; }
     #accueil .section-rejoindre .btn-rejoindre a {
       color: #ffffff; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-rejoindre .btn-rejoindre a {
+          font-size: 22px; } }
     #accueil .section-rejoindre .btn-rejoindre:hover {
       box-shadow: 3px 3px 6px #00000029; }
       #accueil .section-rejoindre .btn-rejoindre:hover a {
         font-size: 1.08em; }
 #accueil .section-actualites {
   padding: 80px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-actualites {
+      padding: 20px 15px; } }
   #accueil .section-actualites .row {
     margin-bottom: 20px; }
     #accueil .section-actualites .row h2, #accueil .section-actualites .row img, #accueil .section-actualites .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-actualites .row h2 {
+        font-size: 18px; } }
     #accueil .section-actualites .row h3 {
       font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-actualites .row h3 {
+          font-size: 16px; } }
   #accueil .section-actualites .actualite {
     margin: 20px 20px 0 20px;
     padding: 10px;
@@ -376,10 +466,19 @@ p,
       text-align: justify;
       padding: 0;
       margin: 0; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-actualites .actualite h2 {
+          font-size: 16px; } }
     #accueil .section-actualites .actualite h4 {
       font-size: 16px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-actualites .actualite h4 {
+          font-size: 12px; } }
     #accueil .section-actualites .actualite .plus {
       font-size: 16px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-actualites .actualite .plus {
+          font-size: 12px; } }
       #accueil .section-actualites .actualite .plus p {
         margin: auto;
         margin-right: 0;
@@ -389,27 +488,41 @@ p,
     #accueil .section-actualites .actualite:hover {
       box-shadow: 3px 3px 6px #00000029;
       background-color: #b4c8d833; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-actualites .actualite {
+        box-shadow: 3px 3px 6px #00000029;
+        background-color: #b4c8d833; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-actualites .actualite .description p {
+        font-size: 12px; } }
 #accueil .section-partenaires {
   background-color: #b4c8d833;
   padding: 80px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #accueil .section-partenaires {
+      padding: 20px 15px; } }
   #accueil .section-partenaires .row {
     margin-bottom: 20px; }
     #accueil .section-partenaires .row h2, #accueil .section-partenaires .row img, #accueil .section-partenaires .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      #accueil .section-partenaires .row h2 {
+        font-size: 18px; } }
     #accueil .section-partenaires .row h3 {
       font-size: 20px; }
-
-.slick-slide img {
-  width: 70%; }
-  .slick-slide img:hover {
-    box-shadow: 3px 3px 6px #00000029; }
-
-ul.slick-dots {
-  display: none !important; }
-
-.slick-prev:before, .slick-next:before {
-  color: #0061ab !important; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        #accueil .section-partenaires .row h3 {
+          font-size: 16px; } }
+  #accueil .section-partenaires .slick-slide img {
+    width: 70%; }
+    #accueil .section-partenaires .slick-slide img:hover {
+      box-shadow: 3px 3px 6px #00000029; }
+  #accueil .section-partenaires ul.slick-dots {
+    display: none !important; }
+  #accueil .section-partenaires .slick-prev:before,
+  #accueil .section-partenaires .slick-next:before {
+    color: #0061ab !important; }
 
 /*# sourceMappingURL=App.css.map */

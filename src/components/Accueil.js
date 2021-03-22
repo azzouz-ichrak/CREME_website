@@ -40,6 +40,23 @@ const Accueil = () => {
                         </Row>
                     </Col>
                 </Row>
+                <Col id="display-mobile">
+                    <Row>
+                    <img src={imageGroup} alt="creme" />
+                    </Row>
+                    <Row>
+                            <p>Depuis 1983.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidmco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+                                </p>
+                        </Row>
+                        <Row>
+                            <a href="/creme" className="btn-decouvrir">
+                                Découvrez notre association
+                                </a>
+                        </Row>
+                </Col>
             </Container>
             <div className="section-objectifs">
                 <Container>

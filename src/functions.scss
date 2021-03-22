@@ -47,6 +47,9 @@ p,
   }
 @mixin section() {
     padding: 80px 0;
+    @include media-query(mobile) {
+      padding: 20px 15px;
+     }
     .row{
         margin-bottom: 20px;
         h2,img,h3{
@@ -54,8 +57,16 @@ p,
             color: $blue;
             text-align: center ;
         }
+        h2{
+          @include media-query(mobile) {
+           font-size: 18px;
+          }
+        }
         h3{
             font-size: 20px;
+            @include media-query(mobile) {
+              font-size: 16px;
+            }
         }
     }
 }
