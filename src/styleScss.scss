@@ -147,6 +147,9 @@
                         width: 50%;
                         //padding-left: 0;
                     }
+                    @include media-query(tablet) {
+                        padding: 0;
+                    }
                     p {
                         padding-bottom: 10px;
                         font-size: 14px;
@@ -260,11 +263,17 @@
             @include media-query(mobile) {
                 top: 25% !important;
             }
+            @include media-query(tablet) {
+                top: 35% !important;
+            }
             h3 {
                 font-size: 50px;
                 text-shadow: 3px 3px 6px black;
                 @include media-query(mobile) {
                     font-size: 22px;
+                }
+                @include media-query(tablet) {
+                    font-size: 30px;
                 }
             }
             p {
@@ -273,6 +282,9 @@
                 text-align: justify;
                 @include media-query(mobile) {
                     font-size: 12px;
+                }
+                @include media-query(tablet) {
+                    font-size: 18px;
                 }
             }
         }
@@ -415,9 +427,17 @@
                     width: 100%;
                     font-size: 22px;
                 }
+                @include media-query(tablet) {
+                    width: 100%;
+                    padding: 20px;
+                }
                 h2 {
+                    @include media-query(tablet) {
+                        margin: auto;
+                    }
                     @include media-query(mobile) {
                         font-size: 22px;
+                        margin: auto;
                     }
                 }
             }
@@ -467,20 +487,23 @@
                     text-align: justify;
                     padding: 0;
                     margin: 0;
-                    @include media-query(mobile){
+                    @include media-query(mobile) {
                         font-size: 16px;
                     }
                 }
                 h4 {
                     font-size: 16px;
-                    @include media-query(mobile){
+                    @include media-query(mobile) {
                         font-size: 12px;
                     }
                 }
                 .plus {
                     font-size: 16px;
-                    @include media-query(mobile){
+                    @include media-query(mobile) {
                         font-size: 12px;
+                    }
+                    @include media-query(tablet) {
+                        font-size: 14px;
                     }
                     p {
                         margin: auto;
@@ -495,12 +518,16 @@
                     @include boxShadow();
                     background-color: $lightBlue;
                 }
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     @include boxShadow();
                     background-color: $lightBlue;
                 }
-                .description p{
-                    @include media-query(mobile){
+                @include media-query(tablet) {
+                    @include boxShadow();
+                    background-color: $lightBlue;
+                }
+                .description p {
+                    @include media-query(mobile) {
                         font-size: 12px;
                     }
                 }
