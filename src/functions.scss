@@ -2,6 +2,7 @@
 $blue: #0061ab;
 $darkBlue: #152848;
 $lightBlue : #b4c8d833;
+$lightBlueOpacity: #0061ab66;
 $green: #66a344;
 $white: #ffffff;
 $grey: #eff3f7;
@@ -68,6 +69,11 @@ p,
               font-size: 16px;
             }
         }
+        p {
+          font-size: 14px;
+          text-align: justify;
+          color: $darkBlue
+      }
     }
 }
 

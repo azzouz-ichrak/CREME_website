@@ -1,6 +1,11 @@
 import React from "react"
 import Slider from "react-slick"
-import metouia from './images/metouia-logo.png'
+import metouia from '../images/metouia-logo.png'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import underTitle from '../images/under-title.png'
+
 const Partenaires = ()=> {
     
     var settings = {
@@ -37,7 +42,13 @@ const Partenaires = ()=> {
           }
         ]
       };
+
   return (
+    <div className="section-partenaires">
+                <Container>
+                <Row ><h2>Ils nous font confiance</h2></Row>
+                <Row> <img src={underTitle} /></Row>
+
     <Slider {...settings}>
       <div>
         <img src={metouia} alt="metouia" />
@@ -64,6 +75,8 @@ const Partenaires = ()=> {
         <img src={metouia} alt="metouia" />
       </div>
     </Slider>
+    </Container>
+            </div>
   );
 }
 

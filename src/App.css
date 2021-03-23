@@ -210,70 +210,75 @@ p,
         color: #ffffff;
         text-align: center; }
 
-#accueil .carousel .carousel-indicators {
+.carousel .carousel-indicators {
   display: none; }
-#accueil .carousel .carousel-caption {
+.carousel .carousel-caption {
   top: 45% !important;
   left: 50% !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   text-align: left !important; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .carousel .carousel-caption {
+    .carousel .carousel-caption {
       top: 25% !important; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
-    #accueil .carousel .carousel-caption {
+    .carousel .carousel-caption {
       top: 35% !important; } }
-  #accueil .carousel .carousel-caption h3 {
+  .carousel .carousel-caption h3 {
     font-size: 50px;
     text-shadow: 3px 3px 6px black; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .carousel .carousel-caption h3 {
+      .carousel .carousel-caption h3 {
         font-size: 22px; } }
     @media only screen and (min-width: 480px) and (max-width: 768px) {
-      #accueil .carousel .carousel-caption h3 {
+      .carousel .carousel-caption h3 {
         font-size: 30px; } }
-  #accueil .carousel .carousel-caption p {
+  .carousel .carousel-caption p {
     font-size: 25px;
     text-shadow: 3px 3px 6px black;
     text-align: justify; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .carousel .carousel-caption p {
+      .carousel .carousel-caption p {
         font-size: 12px; } }
     @media only screen and (min-width: 480px) and (max-width: 768px) {
-      #accueil .carousel .carousel-caption p {
+      .carousel .carousel-caption p {
         font-size: 18px; } }
-#accueil .section-apropos {
+
+.section-apropos {
   padding: 80px 0; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-apropos {
+    .section-apropos {
       padding: 20px 15px; } }
-  #accueil .section-apropos .row {
+  .section-apropos .row {
     margin-bottom: 20px; }
-    #accueil .section-apropos .row h2, #accueil .section-apropos .row img, #accueil .section-apropos .row h3 {
+    .section-apropos .row h2, .section-apropos .row img, .section-apropos .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-apropos .row h2 {
+      .section-apropos .row h2 {
         font-size: 18px; } }
-    #accueil .section-apropos .row h3 {
+    .section-apropos .row h3 {
       font-size: 20px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-apropos .row h3 {
+        .section-apropos .row h3 {
           font-size: 16px; } }
+    .section-apropos .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-apropos-part-2 {
+    .section-apropos-part-2 {
       display: none; } }
-  #accueil .section-apropos-part-2 .col {
+  .section-apropos-part-2 .col {
     width: 50% !important; }
-    #accueil .section-apropos-part-2 .col img {
+    .section-apropos-part-2 .col img {
       width: 100% !important;
       margin: 0 !important; }
-    #accueil .section-apropos-part-2 .col p {
+    .section-apropos-part-2 .col p {
       font-size: 14px;
       text-align: justify; }
-    #accueil .section-apropos-part-2 .col a {
+    .section-apropos-part-2 .col a {
       position: absolute;
       bottom: 0;
       background-color: #66a344;
@@ -281,21 +286,21 @@ p,
       border-radius: 12px;
       color: #ffffff;
       font-size: 16px; }
-      #accueil .section-apropos-part-2 .col a:hover {
+      .section-apropos-part-2 .col a:hover {
         box-shadow: 3px 3px 6px #00000029;
         padding: 12px 17px; }
-  #accueil .section-apropos #display-mobile {
+  .section-apropos #display-mobile {
     display: none; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-apropos #display-mobile {
+      .section-apropos #display-mobile {
         display: block; } }
-    #accueil .section-apropos #display-mobile .row img {
+    .section-apropos #display-mobile .row img {
       width: 100% !important;
       margin: 0 !important; }
-    #accueil .section-apropos #display-mobile .row p {
+    .section-apropos #display-mobile .row p {
       font-size: 10px;
       text-align: justify; }
-    #accueil .section-apropos #display-mobile .row a {
+    .section-apropos #display-mobile .row a {
       text-align: center;
       margin: auto;
       background-color: #66a344;
@@ -304,27 +309,31 @@ p,
       color: #ffffff;
       font-size: 14px;
       box-shadow: 3px 3px 6px #00000029; }
-#accueil .section-objectifs {
+.section-objectifs {
   background-color: #b4c8d833;
   padding: 80px 0; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-objectifs {
+    .section-objectifs {
       padding: 20px 15px; } }
-  #accueil .section-objectifs .row {
+  .section-objectifs .row {
     margin-bottom: 20px; }
-    #accueil .section-objectifs .row h2, #accueil .section-objectifs .row img, #accueil .section-objectifs .row h3 {
+    .section-objectifs .row h2, .section-objectifs .row img, .section-objectifs .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-objectifs .row h2 {
+      .section-objectifs .row h2 {
         font-size: 18px; } }
-    #accueil .section-objectifs .row h3 {
+    .section-objectifs .row h3 {
       font-size: 20px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-objectifs .row h3 {
+        .section-objectifs .row h3 {
           font-size: 16px; } }
-  #accueil .section-objectifs .col {
+    .section-objectifs .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-objectifs .col {
     margin: 25px;
     margin-bottom: 0;
     padding: 30px;
@@ -333,41 +342,45 @@ p,
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px; }
-    #accueil .section-objectifs .col:hover {
+    .section-objectifs .col:hover {
       box-shadow: 3px 3px 6px #00000029;
       padding: 32px; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-objectifs .col h3 {
+      .section-objectifs .col h3 {
         font-size: 11px !important; } }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-objectifs .col {
+      .section-objectifs .col {
         margin: 10px !important;
         padding: 8px !important; } }
-#accueil .section-activites {
+.section-activites {
   padding: 80px 0; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-activites {
+    .section-activites {
       padding: 20px 15px; } }
-  #accueil .section-activites .row {
+  .section-activites .row {
     margin-bottom: 20px; }
-    #accueil .section-activites .row h2, #accueil .section-activites .row img, #accueil .section-activites .row h3 {
+    .section-activites .row h2, .section-activites .row img, .section-activites .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-activites .row h2 {
+      .section-activites .row h2 {
         font-size: 18px; } }
-    #accueil .section-activites .row h3 {
+    .section-activites .row h3 {
       font-size: 20px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-activites .row h3 {
+        .section-activites .row h3 {
           font-size: 16px; } }
-  #accueil .section-activites .act-1 {
+    .section-activites .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-activites .act-1 {
     margin-right: 80px; }
-  #accueil .section-activites .act-2 {
+  .section-activites .act-2 {
     margin-left: 80px; }
-  #accueil .section-activites .act-1,
-  #accueil .section-activites .act-2 {
+  .section-activites .act-1,
+  .section-activites .act-2 {
     background-color: #0061ab;
     width: 50%;
     margin-top: 20px;
@@ -377,25 +390,25 @@ p,
     -ms-border-radius: 10px;
     border-radius: 10px;
     text-align: center; }
-    #accueil .section-activites .act-1 a,
-    #accueil .section-activites .act-2 a {
+    .section-activites .act-1 a,
+    .section-activites .act-2 a {
       color: #ffffff;
       text-transform: capitalize; }
-    #accueil .section-activites .act-1:hover,
-    #accueil .section-activites .act-2:hover {
+    .section-activites .act-1:hover,
+    .section-activites .act-2:hover {
       background-color: #ffffff;
       border: 2px solid #0061ab; }
-      #accueil .section-activites .act-1:hover a,
-      #accueil .section-activites .act-2:hover a {
+      .section-activites .act-1:hover a,
+      .section-activites .act-2:hover a {
         color: #0061ab;
         font-size: 1.08em; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-activites .act-1,
-      #accueil .section-activites .act-2 {
+      .section-activites .act-1,
+      .section-activites .act-2 {
         margin: 4px;
         padding: 15px 8px;
         font-size: 14px; } }
-#accueil .section-rejoindre {
+.section-rejoindre {
   background-image: url("./components//images/metouia.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -404,28 +417,28 @@ p,
   background-position: center center;
   padding: 50px 0; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-rejoindre {
+    .section-rejoindre {
       background-size: inherit;
       height: 200px; } }
-  #accueil .section-rejoindre .row {
+  .section-rejoindre .row {
     color: #ffffff;
     width: 40%; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-rejoindre .row {
+      .section-rejoindre .row {
         width: 100%;
         font-size: 22px; } }
     @media only screen and (min-width: 480px) and (max-width: 768px) {
-      #accueil .section-rejoindre .row {
+      .section-rejoindre .row {
         width: 100%;
         padding: 20px; } }
     @media only screen and (min-width: 480px) and (max-width: 768px) {
-      #accueil .section-rejoindre .row h2 {
+      .section-rejoindre .row h2 {
         margin: auto; } }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-rejoindre .row h2 {
+      .section-rejoindre .row h2 {
         font-size: 22px;
         margin: auto; } }
-  #accueil .section-rejoindre .btn-rejoindre {
+  .section-rejoindre .btn-rejoindre {
     margin: auto;
     margin-top: 20px;
     width: fit-content;
@@ -435,121 +448,220 @@ p,
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px; }
-    #accueil .section-rejoindre .btn-rejoindre a {
+    .section-rejoindre .btn-rejoindre a {
       color: #ffffff; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-rejoindre .btn-rejoindre a {
+        .section-rejoindre .btn-rejoindre a {
           font-size: 22px; } }
-    #accueil .section-rejoindre .btn-rejoindre:hover {
+    .section-rejoindre .btn-rejoindre:hover {
       box-shadow: 3px 3px 6px #00000029; }
-      #accueil .section-rejoindre .btn-rejoindre:hover a {
+      .section-rejoindre .btn-rejoindre:hover a {
         font-size: 1.08em; }
-#accueil .section-actualites {
+.section-actualites {
   padding: 80px 0; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-actualites {
+    .section-actualites {
       padding: 20px 15px; } }
-  #accueil .section-actualites .row {
+  .section-actualites .row {
     margin-bottom: 20px; }
-    #accueil .section-actualites .row h2, #accueil .section-actualites .row img, #accueil .section-actualites .row h3 {
+    .section-actualites .row h2, .section-actualites .row img, .section-actualites .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-actualites .row h2 {
+      .section-actualites .row h2 {
         font-size: 18px; } }
-    #accueil .section-actualites .row h3 {
+    .section-actualites .row h3 {
       font-size: 20px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-actualites .row h3 {
+        .section-actualites .row h3 {
           font-size: 16px; } }
-  #accueil .section-actualites .actualite {
+    .section-actualites .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-actualites .actualite {
     margin: 20px 20px 0 20px;
     padding: 10px;
     text-align: justify; }
-    #accueil .section-actualites .actualite img {
+    .section-actualites .actualite img {
       width: 100%;
       box-shadow: 3px 3px 6px #00000029;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       border-radius: 10px; }
-    #accueil .section-actualites .actualite .title-1 {
+    .section-actualites .actualite .title-1 {
       margin: 0;
       margin-bottom: 8px;
       color: #66a344; }
-    #accueil .section-actualites .actualite .title-2 {
+    .section-actualites .actualite .title-2 {
       margin: 0;
       margin-bottom: 12px; }
-    #accueil .section-actualites .actualite h2 {
+    .section-actualites .actualite h2 {
       font-size: 20px;
       text-align: justify;
       padding: 0;
       margin: 0; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-actualites .actualite h2 {
+        .section-actualites .actualite h2 {
           font-size: 16px; } }
-    #accueil .section-actualites .actualite h4 {
+    .section-actualites .actualite h4 {
       font-size: 16px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-actualites .actualite h4 {
+        .section-actualites .actualite h4 {
           font-size: 12px; } }
-    #accueil .section-actualites .actualite .plus {
+    .section-actualites .actualite .plus {
       font-size: 16px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-actualites .actualite .plus {
+        .section-actualites .actualite .plus {
           font-size: 12px; } }
       @media only screen and (min-width: 480px) and (max-width: 768px) {
-        #accueil .section-actualites .actualite .plus {
+        .section-actualites .actualite .plus {
           font-size: 14px; } }
-      #accueil .section-actualites .actualite .plus p {
+      .section-actualites .actualite .plus p {
         margin: auto;
         margin-right: 0;
         padding: 0; }
-        #accueil .section-actualites .actualite .plus p a {
+        .section-actualites .actualite .plus p a {
           color: #66a344; }
-    #accueil .section-actualites .actualite:hover {
+    .section-actualites .actualite:hover {
       box-shadow: 3px 3px 6px #00000029;
       background-color: #b4c8d833; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-actualites .actualite {
+      .section-actualites .actualite {
         box-shadow: 3px 3px 6px #00000029;
         background-color: #b4c8d833; } }
     @media only screen and (min-width: 480px) and (max-width: 768px) {
-      #accueil .section-actualites .actualite {
+      .section-actualites .actualite {
         box-shadow: 3px 3px 6px #00000029;
         background-color: #b4c8d833; } }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-actualites .actualite .description p {
+      .section-actualites .actualite .description p {
         font-size: 12px; } }
-#accueil .section-partenaires {
+.section-partenaires {
   background-color: #b4c8d833;
   padding: 80px 0; }
   @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #accueil .section-partenaires {
+    .section-partenaires {
       padding: 20px 15px; } }
-  #accueil .section-partenaires .row {
+  .section-partenaires .row {
     margin-bottom: 20px; }
-    #accueil .section-partenaires .row h2, #accueil .section-partenaires .row img, #accueil .section-partenaires .row h3 {
+    .section-partenaires .row h2, .section-partenaires .row img, .section-partenaires .row h3 {
       margin: auto;
       color: #0061ab;
       text-align: center; }
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      #accueil .section-partenaires .row h2 {
+      .section-partenaires .row h2 {
         font-size: 18px; } }
-    #accueil .section-partenaires .row h3 {
+    .section-partenaires .row h3 {
       font-size: 20px; }
       @media only screen and (min-width: 320px) and (max-width: 480px) {
-        #accueil .section-partenaires .row h3 {
+        .section-partenaires .row h3 {
           font-size: 16px; } }
-  #accueil .section-partenaires .slick-slide img {
+    .section-partenaires .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-partenaires .slick-slide img {
     width: 70%; }
-    #accueil .section-partenaires .slick-slide img:hover {
+    .section-partenaires .slick-slide img:hover {
       box-shadow: 3px 3px 6px #00000029; }
-  #accueil .section-partenaires ul.slick-dots {
+  .section-partenaires ul.slick-dots {
     display: none !important; }
-  #accueil .section-partenaires .slick-prev:before,
-  #accueil .section-partenaires .slick-next:before {
+  .section-partenaires .slick-prev:before,
+  .section-partenaires .slick-next:before {
     color: #0061ab !important; }
+.section-creme-banner {
+  background-image: url("./components//images/banner-creme.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  background-position: center; }
+  .section-creme-banner h2 {
+    margin: auto;
+    color: #ffffff; }
+.section-creme, .section-mission {
+  padding: 80px 0;
+  background-color: #b4c8d833; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-creme, .section-mission {
+      padding: 20px 15px; } }
+  .section-creme .row, .section-mission .row {
+    margin-bottom: 20px; }
+    .section-creme .row h2, .section-mission .row h2, .section-creme .row img, .section-mission .row img, .section-creme .row h3, .section-mission .row h3 {
+      margin: auto;
+      color: #0061ab;
+      text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-creme .row h2, .section-mission .row h2 {
+        font-size: 18px; } }
+    .section-creme .row h3, .section-mission .row h3 {
+      font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .section-creme .row h3, .section-mission .row h3 {
+          font-size: 16px; } }
+    .section-creme .row p, .section-mission .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-creme .row .col, .section-mission .row .col {
+    width: 50%; }
+    .section-creme .row .col h2, .section-mission .row .col h2, .section-creme .row .col img, .section-mission .row .col img, .section-creme .row .col p, .section-mission .row .col p {
+      margin-left: 0 !important; }
+    .section-creme .row .col .image-creme img, .section-mission .row .col .image-creme img {
+      width: 100%; }
+.section-mission {
+  background-color: #ffffff !important; }
+.section-membres {
+  padding: 80px 0; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-membres {
+      padding: 20px 15px; } }
+  .section-membres .row {
+    margin-bottom: 20px; }
+    .section-membres .row h2, .section-membres .row img, .section-membres .row h3 {
+      margin: auto;
+      color: #0061ab;
+      text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-membres .row h2 {
+        font-size: 18px; } }
+    .section-membres .row h3 {
+      font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .section-membres .row h3 {
+          font-size: 16px; } }
+    .section-membres .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-membres #membres {
+    margin-top: 30px; }
+  .section-membres .membre {
+    margin-bottom: 20px; }
+    .section-membres .membre-image {
+      width: 100%;
+      height: 350px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .section-membres .membre-coordonnee {
+      margin: auto;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      padding-bottom: 20%;
+      background-color: #0061ab66;
+      display: none; }
+      .section-membres .membre-coordonnee p {
+        text-align: center;
+        color: #ffffff; }
+      .section-membres .membre-coordonnee-nom {
+        font-size: 26px !important; }
+      .section-membres .membre-coordonnee-fonction {
+        font-size: 18px !important; }
+    .section-membres .membre-image:hover .membre-coordonnee {
+      display: flex; }
 
 /*# sourceMappingURL=App.css.map */

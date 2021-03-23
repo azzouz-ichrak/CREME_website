@@ -19,7 +19,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav  >
-            <Nav.Link> <Link to="/creme"  activeClassName="active">Accueil<span className="under-menu"></span></Link></Nav.Link>
+            <Nav.Link> <Link to="/"  activeClassName="active">Accueil<span className="under-menu"></span></Link></Nav.Link>
             <NavDropdown activeClassName='active' title="CREME" id="basic-nav-dropdown">
               <NavDropdown.Item > <Link to="/creme">CREME</Link></NavDropdown.Item>
               <NavDropdown.Item > <Link to="/creme">Mission</Link></NavDropdown.Item>

@@ -6,7 +6,9 @@ import imageGroup from './images/creme.png'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import act from './images/act.png'
-import Partenaires from './Partenaires'
+import Partenaires from './creme/Partenaires'
+import Objectifs from './creme/Objectifs'
+
 const Accueil = () => {
     return (
         <Container fluid id="accueil">
@@ -58,26 +60,7 @@ const Accueil = () => {
                         </Row>
                 </Col>
             </Container>
-            <div className="section-objectifs">
-                <Container>
-                    <Row ><h2>Nos objectifs</h2></Row>
-                    <Row> <img src={underTitle} /></Row>
-                    <Row>
-                        <Col className="objectif-1">
-                            <h3>Offrir un espace de rencontre pour les métouiens à  Tunis et à Metouia</h3>
-                        </Col>
-                        <Col className="objectif-2"><h3>
-                            Développer un réseau d'entraide métouien
-                        </h3></Col>
-                        <Col className="objectif-3"><h3>
-                            Organiser des événements mensuels
-                        </h3></Col>
-                        <Col className="objectif-4"><h3>
-                            Aider dans la création des projets à Metouia
-                        </h3></Col>
-                    </Row>
-                </Container>
-            </div>
+            <Objectifs />
             <div className="section-activites">
                 <Container>
                     <Row ><h2>Nos activités</h2></Row>
@@ -140,13 +123,8 @@ Bravo à tous et à M Jalel B Romdhane en particulier qui a eu cette idée pour 
                 </Row>
 
             </Container>
-            <div className="section-partenaires">
-                <Container>
-                <Row ><h2>Ils nous font confiance</h2></Row>
-                <Row> <img src={underTitle} /></Row>
+      
                 <Partenaires />
-                </Container>
-            </div>
         </Container>
 
     )
