@@ -15,18 +15,26 @@ const Objectifs = ()=>{
                     <Row ><h2>Nos objectifs</h2></Row>
                     <Row> <img src={underTitle} /></Row>
                     <Row>
-                        <Col className="objectif-1">
+                        <Col  sm={3} xs={3} >
+                            <div className="objectif-1">
                             <h3>Offrir un espace de rencontre pour les métouiens à  Tunis et à Metouia</h3>
+                            </div>
                         </Col>
-                        <Col className="objectif-2"><h3>
+                        <Col  sm={3} xs={3} >
+                            <div className="objectif-2"><h3>
                             Développer un réseau d'entraide métouien
-                        </h3></Col>
-                        <Col className="objectif-3"><h3>
+                        </h3>
+                        </div></Col>
+                        <Col  sm={3} xs={3} >
+                            <div className="objectif-3"><h3>
                             Organiser des événements mensuels
-                        </h3></Col>
-                        <Col className="objectif-4"><h3>
+                        </h3>
+                        </div></Col>
+                        <Col  sm={3} xs={3} >
+                            <div className="objectif-4"><h3>
                             Aider dans la création des projets à Metouia
-                        </h3></Col>
+                        </h3>
+                        </div></Col>
                     </Row>
                 </Container>
             </div>

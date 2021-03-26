@@ -1,6 +1,12 @@
 @import "./functions.scss";
 
 //  --------- header --------
+
+.container{
+    @include media-query(tablet){
+      padding: 0;
+    }
+  }
 .top {
     border: 1px solid $borderColor;
     #top {
@@ -87,7 +93,7 @@
                     visibility: inherit;
                 }
             }
-            .nav-link a:focus,
+            
             .nav-link a:active {
                 outline: none;
                 color: $green !important;
@@ -352,24 +358,33 @@
         &-objectifs {
             background-color: $lightBlue;
             @include section();
-            .col {
-                margin: 25px;
-                margin-bottom: 0;
-                padding: 30px;
-                background-color: $white;
-                @include border-radius(10px);
-                &:hover {
-                    @include boxShadow();
-                    padding: 32px;
+            .col-3 {
+                margin: 0;
+                padding: 0;
+                @include media-query(mobile){
+                    margin: 0 !important;
                 }
-                h3 {
-                    @include media-query(mobile) {
-                        font-size: 11px !important;
+                div{
+                    margin: 25px;
+                    padding: 30px;
+                    background-color: $white;
+                    @include border-radius(10px);
+                    @include media-query(mobile){
+                        margin: 2px;
+                        padding: 8px;
                     }
-                }
-                @include media-query(mobile) {
-                    margin: 10px !important;
-                    padding: 8px !important;
+                    &:hover {
+                        @include boxShadow();
+                        padding: 32px;
+                    }
+                    h3 {
+                        @include media-query(mobile) {
+                            font-size: 11px !important;
+                        }
+                    }
+                    @include media-query(mobile) {
+                        padding: 8px !important;
+                    }
                 }
             }
         }
@@ -541,6 +556,12 @@
                 &:hover {
                     @include boxShadow();
                 }
+                @include media-query(mobile){
+                    @include boxShadow();
+                }
+                @include media-query(tablet){
+                    @include boxShadow();
+                }
             }
             ul.slick-dots {
                 display: none !important;
@@ -559,9 +580,32 @@
             h2{
                 margin: auto;
                 color: $white;
+                @include media-query(mobile) {
+                    font-size: 24px;
+                    text-align: center
+                }
             }
         }
         &-creme{
+            .container{
+                &:nth-child(1){
+                    @include media-query(mobile){
+                        display: none;
+                    }
+                }
+                &:nth-child(2){
+                    display: none;
+                    @include media-query(mobile){
+                        display: block;
+                    }
+                    .image-creme img{
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
             @include section();
             background-color: $lightBlue;
             .row{
@@ -578,6 +622,8 @@
                     }
                 }
             }
+            
+
         }
         &-mission{
             @extend .section-creme;
@@ -588,42 +634,142 @@
             #membres{
                 margin-top: 30px;
             }
-            .membre{
-                margin-bottom: 20px;
-                &-image{
-                    width: 100%;
-                    height: 350px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-                &-coordonnee{
-                    margin: auto;
-                    height: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    flex-direction: column;
-                    padding-bottom: 20%;
-                    background-color: $lightBlueOpacity;
-                    p{
-                        text-align: center;
-                        color: $white;
+            .row{
+                justify-content: center;
+
+                .col-3{
+                    padding: 20px;
+                    @include media-query(mobile){
+                        padding: 4px;
                     }
-                    &-nom{
-                        font-size: 26px !important;
+                    @include media-query(tablet){
+                        padding: 4px;
                     }
-                    &-fonction{
-                        font-size: 18px !important;
-                    }
-                    display: none;
-                }
-                &-image:hover{
-                        .membre-coordonnee{
-                            display: flex;
-                        }
-                
                 }
             }
+                .membre{
+                    border-radius: 10px;
+                    position: relative;
+                    padding: 0;
+                    margin: 8px;
+                    @include media-query(mobile){
+                        margin: 0;
+                        @include boxShadow();
+                    }
+                    @include media-query(tablet){
+                        @include boxShadow();
+                    }
+                    .image {
+                        border-radius: 10px;
+                        opacity: 1;
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        transition: .1s ease;
+                        @include media-query(mobile){
+                            border-radius: 10px 10px 0 0;
+                        }
+                        @include media-query(tablet){
+                            border-radius: 10px 10px 0 0;
+                        }
+                    }
+                    .filter{
+                        border-radius: 10px;
+                        z-index: 0;
+                        width: 100%;
+                        background-color: $lightBlueOpacity;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        opacity: 0;
+                        @include media-query(mobile){
+                            display: none;
+                        }
+                        @include media-query(tablet){
+                            display: none;
+                        }
+                    }
+                    .middle {
+                        transition: .5s ease;
+                        border-radius: 0 0 10px 10px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        text-align: center;
+                        p{
+                            text-align: center;
+                            color: $white;
+                            @include media-query(mobile){
+                                font-size: 7px;
+                                margin: 0;
+                                text-align: center;
+                                padding: 2px;
+                            }
+                            @include media-query(tablet){
+                                font-size: 7px;
+                                margin: 0;
+                                text-align: center;
+                                padding: 2px;
+                            }
+                            img{
+                                @include media-query(mobile){
+                                    width: 15%;
+                                }
+                                @include media-query(tablet){
+                                    width: 15%;
+                                }
+                            }
+                        }
+                        @include media-query(mobile){
+                            top: inherit;
+                            left: inherit;
+                            position: initial;
+                            transform: none;
+                            -ms-transform: none;
+                            opacity: 1;
+                            width: 100%;
+                            background-color: $blue;
+                            text-align: center;
+                        }
+                        @include media-query(tablet){
+                            top: inherit;
+                            left: inherit;
+                            position: initial;
+                            transform: none;
+                            -ms-transform: none;
+                            opacity: 1;
+                            width: 100%;
+                            background-color: $lightBlueOpacity;
+                            text-align: center;
+                        }
+                    }
+                    &:hover{
+                        @include boxShadow();
+                        .image {
+                            z-index: -1;
+                        }
+                        .middle{
+                            opacity: 1;
+                        }
+                        .filter {
+                            opacity: 1;
+                        }
+                    }
+                   
+                    .text {
+                        background-color: #4CAF50;
+                        color: white;
+                        font-size: 16px;
+                        padding: 16px 32px;
+                    }
+                }
+            
+           
             
         }
+        
     }
 
