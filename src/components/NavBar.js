@@ -28,8 +28,8 @@ const NavBar = () => {
               <NavDropdown.Item > <Link to="/creme">Partenariats</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown activeClassName='active' title="Activités" id="basic-nav-dropdown">
-              <NavDropdown.Item > <Link to="/creme">évènements</Link></NavDropdown.Item>
-              <NavDropdown.Item > <Link to="/creme">Projets</Link></NavDropdown.Item>
+              <NavDropdown.Item > <Link to="/activites/evenements">évènements</Link></NavDropdown.Item>
+              <NavDropdown.Item > <Link to="/activites/projets">Projets</Link></NavDropdown.Item>
             </NavDropdown>
             <Nav.Link > <Link to="/" activeClassName="active">Actualités<span className="under-menu"></span></Link></Nav.Link>
             <Nav.Link > <Link to="/creme"  activeClassName="active">Contactez-Nous<span className="under-menu"></span></Link></Nav.Link>

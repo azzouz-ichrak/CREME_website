@@ -5,18 +5,18 @@ import Col from 'react-bootstrap/Col'
 import Objectifs from './creme/Objectifs'
 import Membres from './creme/Membres'
 import Partenaires from './creme/Partenaires'
+import Banner from './Banner'
 //images
 import underTitle from '../components/images/under-title.png'
 import imageGroup from './images/creme.png'
 import missionCreme from './images/missions-creme.png'
 
 const Creme = () => {
+    const title = 'Association tunisienne depuis 1983'
     return (
         <Container fluid>
 
-            <Row id="banner-creme" className="section-creme-banner">
-                <h2>Association tunisienne depuis 1983</h2>
-            </Row>
+           <Banner title={title}/>
 
             <div className="section-creme">
                 <Container>

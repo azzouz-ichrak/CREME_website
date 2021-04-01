@@ -67,6 +67,7 @@ a {
   #header-menu #basic-navbar-nav .navbar-nav .nav-link a,
   #header-menu #basic-navbar-nav .navbar-nav .dropdown-item a {
     color: #0061ab;
+    text-transform: capitalize;
     font-weight: 500;
     font-size: 14px; }
   #header-menu #basic-navbar-nav .navbar-nav .btn-rejoindre {
@@ -826,5 +827,79 @@ a {
       color: white;
       font-size: 16px;
       padding: 16px 32px; }
+.section-evenements {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-evenements {
+      padding: 20px 0; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .section-evenements {
+      padding: 40px; } }
+  .section-evenements .row {
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-evenements .row {
+        margin-bottom: 12px; } }
+    .section-evenements .row h2, .section-evenements .row img, .section-evenements .row h3 {
+      margin: auto;
+      color: #0061ab;
+      text-align: center; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-evenements .row h2 {
+        font-size: 18px; } }
+    .section-evenements .row h3 {
+      font-size: 20px; }
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .section-evenements .row h3 {
+          font-size: 16px; } }
+    .section-evenements .row p {
+      font-size: 14px;
+      text-align: justify;
+      color: #152848; }
+  .section-evenements .evenement {
+    border-radius: 12px;
+    padding: 10px;
+    margin: 20px;
+    width: 320px;
+    background-color: #b4c8d833; }
+    .section-evenements .evenement:hover {
+      box-shadow: 3px 3px 6px #00000029;
+      margin: 18px; }
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+      .section-evenements .evenement {
+        width: 260px; } }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-evenements .evenement {
+        width: 260px; } }
+    .section-evenements .evenement h3, .section-evenements .evenement a {
+      margin-top: 20px;
+      margin-bottom: 4px;
+      font-size: 14px;
+      color: #66a344; }
+    .section-evenements .evenement .lien-reserver {
+      margin-top: 20px;
+      text-align: right;
+      font-weight: 600; }
+    .section-evenements .evenement h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #0061ab; }
+    .section-evenements .evenement p {
+      text-align: justify;
+      font-size: 12px; }
+    .section-evenements .evenement img {
+      width: 100%; }
+
+#filter {
+  padding: 30px;
+  background-color: #b4c8d833; }
+  #filter .container .row {
+    margin: 0 22%; }
+    #filter .container .row .col {
+      text-align: center; }
 
 /*# sourceMappingURL=App.css.map */
