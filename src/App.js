@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 import Evenements from './components/Evenements'
 import Projets from './components/Projets'
 import Contacter from './components/Contacter'
-
+import Rejoindre from './components/Rejoindre'
 
 const Routing = () => {
 
@@ -29,6 +29,9 @@ const Routing = () => {
       </Route>
       <Route path='/contact'>
         <Contacter />
+      </Route>
+      <Route path='/nous-rejoindre'>
+        <Rejoindre />
       </Route>
 
     </Switch>

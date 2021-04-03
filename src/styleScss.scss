@@ -819,7 +819,7 @@
         }
         &-contact{
             background-image: url('./components/images/bg-contact.png');
-            height: 652px;
+            height: fit-content;
             background-size: contain;
             @include media-query(tablet){
                 background-size: cover;
@@ -945,6 +945,76 @@
             }
             
             
+        }
+        &-page-rejoindre{
+            background-image: url('./components/images/bg-contact.png');
+            height: fit-content;
+            padding: 70px 0;
+            background-size: cover;
+            @include media-query(mobile){
+                height: auto;
+                padding: 0;
+                background-image: none;
+            }
+            .container{
+                background-color: $grey;
+                padding: 45px;
+                margin: auto;
+                width: 45%;
+                @include media-query(mobile){
+                    width: 100%;
+                    padding: 30px 20px;
+                }
+                .row{
+                    h2{
+                        @include media-query(mobile){
+                            font-size: 18px;
+                        }
+                        color: $blue;
+                        text-transform: uppercase;
+                    }
+                    display: block;
+                    justify-content: center;
+                    text-align: center;
+                    .col{
+                        .form-group{
+                            input{
+                                background-color: $grey;
+                                margin: 25px 0;
+                                border: 1px solid $lightBlueOpacity;
+                                border-radius: 12px;
+                                color: $lightBlueOpacity;
+                                @include media-query(mobile){
+                                    font-size: 14px;
+                                    margin-bottom: 18px;
+                                }
+                               
+                            }
+                        }
+                        button{
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 100%;
+                            padding: 15px;
+                            margin: 30px 0;
+                            border-radius: 12px;
+                            background-color: $darkBlue;
+                            color: $grey;
+                            border-color: $darkBlue;
+                            @include media-query(mobile){
+                                font-size: 16px;
+                               padding: 12px;
+                            }
+                            &:hover{
+                                background-color: $grey;
+                                color: $blue;
+                                border-color: $grey;
+                            }
+                        }
+                    }
+                }
+            }
         }
       
         

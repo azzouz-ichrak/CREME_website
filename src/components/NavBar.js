@@ -33,7 +33,7 @@ const NavBar = () => {
             </NavDropdown>
             <Nav.Link > <Link to="/" activeClassName="active">Actualités<span className="under-menu"></span></Link></Nav.Link>
             <Nav.Link > <Link to="/contact"  activeClassName="active">Contactez-Nous<span className="under-menu"></span></Link></Nav.Link>
-            <Nav.Link> <Link to="#link" className="btn-rejoindre">Nous rejoindre</Link></Nav.Link>
+            <Nav.Link> <Link to="/nous-rejoindre" className="btn-rejoindre">Nous rejoindre</Link></Nav.Link>
           </Nav>
 
         </Navbar.Collapse>

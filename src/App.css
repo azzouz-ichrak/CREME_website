@@ -8,6 +8,9 @@ a {
   text-decoration: none;
   color: #0061ab; }
 
+input::placeholder {
+  color: #0061ab66; }
+
 .container-fluid, p, .row {
   margin: 0;
   padding: 0; }
@@ -895,7 +898,7 @@ a {
       width: 100%; }
 .section-contact {
   background-image: url("./components/images/bg-contact.png");
-  height: 652px;
+  height: fit-content;
   background-size: contain; }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .section-contact {
@@ -997,6 +1000,64 @@ a {
             font-size: 16px;
             padding: 12px; } }
         .section-contact .container-contact .form button:hover {
+          background-color: #eff3f7;
+          color: #0061ab;
+          border-color: #eff3f7; }
+.section-page-rejoindre {
+  background-image: url("./components/images/bg-contact.png");
+  height: fit-content;
+  padding: 70px 0;
+  background-size: cover; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-page-rejoindre {
+      height: auto;
+      padding: 0;
+      background-image: none; } }
+  .section-page-rejoindre .container {
+    background-color: #eff3f7;
+    padding: 45px;
+    margin: auto;
+    width: 45%; }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-page-rejoindre .container {
+        width: 100%;
+        padding: 30px 20px; } }
+    .section-page-rejoindre .container .row {
+      display: block;
+      justify-content: center;
+      text-align: center; }
+      .section-page-rejoindre .container .row h2 {
+        color: #0061ab;
+        text-transform: uppercase; }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-page-rejoindre .container .row h2 {
+            font-size: 18px; } }
+      .section-page-rejoindre .container .row .col .form-group input {
+        background-color: #eff3f7;
+        margin: 25px 0;
+        border: 1px solid #0061ab66;
+        border-radius: 12px;
+        color: #0061ab66; }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-page-rejoindre .container .row .col .form-group input {
+            font-size: 14px;
+            margin-bottom: 18px; } }
+      .section-page-rejoindre .container .row .col button {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 100%;
+        padding: 15px;
+        margin: 30px 0;
+        border-radius: 12px;
+        background-color: #152848;
+        color: #eff3f7;
+        border-color: #152848; }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-page-rejoindre .container .row .col button {
+            font-size: 16px;
+            padding: 12px; } }
+        .section-page-rejoindre .container .row .col button:hover {
           background-color: #eff3f7;
           color: #0061ab;
           border-color: #eff3f7; }
