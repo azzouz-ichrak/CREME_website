@@ -895,43 +895,93 @@ a {
       width: 100%; }
 .section-contact {
   background-image: url("./components/images/bg-contact.png");
-  height: 670px;
+  height: 652px;
   background-size: contain; }
-  .section-contact .row:first-child {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .section-contact {
+      background-size: cover; } }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-contact {
+      height: auto;
+      background-image: none; } }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .section-contact .container {
+      padding: 0; } }
+  .section-contact .container-contact {
     padding: 70px 30px; }
-    .section-contact .row:first-child .coordonnees {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      .section-contact .container-contact {
+        padding: 10px 0px;
+        display: block; } }
+    .section-contact .container-contact .coordonnees {
       padding: 30px;
       color: #0061ab;
       background-color: #eff3f7;
       justify-content: space-between; }
-      .section-contact .row:first-child .coordonnees h2 {
-        text-transform: uppercase;
-        margin-bottom: 0; }
-      .section-contact .row:first-child .coordonnees .top {
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .section-contact .container-contact .coordonnees {
+          padding: 16px;
+          text-align: center; } }
+      .section-contact .container-contact .coordonnees-titre {
         margin-bottom: 50px; }
-      .section-contact .row:first-child .coordonnees p {
-        font-weight: 500;
-        font-size: 14px; }
-      .section-contact .row:first-child .coordonnees .underTitle {
-        margin: 20px 0; }
-      .section-contact .row:first-child .coordonnees .row {
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-contact .container-contact .coordonnees-titre {
+            margin: 0; } }
+        .section-contact .container-contact .coordonnees-titre h2 {
+          text-transform: uppercase;
+          margin-bottom: 0; }
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            .section-contact .container-contact .coordonnees-titre h2 {
+              font-size: 18px; } }
+        .section-contact .container-contact .coordonnees-titre p {
+          font-weight: 500;
+          font-size: 14px; }
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            .section-contact .container-contact .coordonnees-titre p {
+              font-size: 13px; } }
+        .section-contact .container-contact .coordonnees-titre .underTitle {
+          margin: 20px 0; }
+      .section-contact .container-contact .coordonnees-decription {
         padding: 10px 0;
         align-items: center; }
-        .section-contact .row:first-child .coordonnees .row img {
-          width: 30px; }
-        .section-contact .row:first-child .coordonnees .row p {
-          margin-left: 20px; }
-    .section-contact .row:first-child .form {
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-contact .container-contact .coordonnees-decription {
+            padding: 0; } }
+        .section-contact .container-contact .coordonnees-decription .row {
+          margin: 20px 0; }
+          .section-contact .container-contact .coordonnees-decription .row .col {
+            max-width: fit-content; }
+            @media only screen and (min-width: 320px) and (max-width: 480px) {
+              .section-contact .container-contact .coordonnees-decription .row .col {
+                margin: auto; } }
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            .section-contact .container-contact .coordonnees-decription .row {
+              display: block;
+              margin: 20px 0 0 0; } }
+          .section-contact .container-contact .coordonnees-decription .row img {
+            width: 30px; }
+            @media only screen and (min-width: 320px) and (max-width: 480px) {
+              .section-contact .container-contact .coordonnees-decription .row img {
+                width: 22px;
+                margin: 8px; } }
+          @media only screen and (min-width: 320px) and (max-width: 480px) {
+            .section-contact .container-contact .coordonnees-decription .row p {
+              margin-left: 10px; } }
+    .section-contact .container-contact .form {
       padding: 30px;
       background-color: #0061ab;
       color: #eff3f7;
       justify-content: space-between; }
-      .section-contact .row:first-child .form input, .section-contact .row:first-child .form textarea {
+      .section-contact .container-contact .form input, .section-contact .container-contact .form textarea {
         margin-bottom: 45px;
         border-radius: 12px;
         font-size: 18px;
         line-height: normal; }
-      .section-contact .row:first-child .form button {
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-contact .container-contact .form input, .section-contact .container-contact .form textarea {
+            font-size: 14px;
+            margin-bottom: 18px; } }
+      .section-contact .container-contact .form button {
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
@@ -942,7 +992,11 @@ a {
         background-color: #152848;
         color: #eff3f7;
         border-color: #152848; }
-        .section-contact .row:first-child .form button:hover {
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+          .section-contact .container-contact .form button {
+            font-size: 16px;
+            padding: 12px; } }
+        .section-contact .container-contact .form button:hover {
           background-color: #eff3f7;
           color: #0061ab;
           border-color: #eff3f7; }

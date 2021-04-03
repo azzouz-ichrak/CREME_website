@@ -819,70 +819,131 @@
         }
         &-contact{
             background-image: url('./components/images/bg-contact.png');
-            height: 670px;
+            height: 652px;
             background-size: contain;
-            .row:first-child{
-                padding: 70px 30px;
-                .coordonnees{
-                    padding: 30px;
-                    color: $blue;
-                    background-color: $grey;
-                    justify-content: space-between;
-                    h2{
-                        text-transform: uppercase;
-                        margin-bottom: 0;
-                    }
-                    .top{
-                        margin-bottom: 50px;
-                    }
-                    p{
-                        font-weight: 500;
-                        font-size: 14px;
-                    }
-                    .underTitle{
-                        margin: 20px 0;
-                    }
-                    .row{
-                        padding: 10px 0;
-                        align-items: center;
-                        img{
-                            width: 30px;
-                        }
-                        p{
-                            margin-left: 20px;
-                        }
-                    }
+            @include media-query(tablet){
+                background-size: cover;
+            }
+            @include media-query(mobile){
+                height: auto;
+                background-image: none;
+            }
+            .container{
+                @include media-query(mobile){
+                    padding:0;
                 }
-                .form{
-                    padding: 30px;
-                    background-color: $blue;
-                    color: $grey;
-                    justify-content: space-between;
-                    input, textarea{
-                        margin-bottom: 45px;
-                        border-radius: 12px;
-                        font-size: 18px;
-                        line-height: normal;
+                &-contact{
+                    padding: 70px 30px;
+                    @include media-query(mobile){
+                        padding: 10px 0px;
+                        display: block;
                     }
-                    button{
-                        font-size: 20px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        width: 100%;
-                        padding: 15px;
-                        margin: 0 0 30px 0;
-                        border-radius: 12px;
-                        background-color: $darkBlue;
+                    .coordonnees{
+                        padding: 30px;
+                        color: $blue;
+                        background-color: $grey;
+                        justify-content: space-between;
+                        @include media-query(mobile){
+                            padding: 16px;
+                            text-align: center;
+                        }
+                        &-titre{
+                            margin-bottom: 50px;
+                            @include media-query(mobile){
+                                margin: 0;
+                            }
+                            h2{
+                                text-transform: uppercase;
+                                margin-bottom: 0;
+                                @include media-query(mobile) {
+                                    font-size: 18px;
+                                   }
+                            }
+                            p{
+                                font-weight: 500;
+                                font-size: 14px;
+                                @include media-query(mobile) {
+                                    font-size: 13px;
+                                   }
+                            }
+                            .underTitle{
+                                margin: 20px 0;
+                            }
+                        }
+                        &-decription{
+                            padding: 10px 0;
+                            @include media-query(mobile){
+                                padding: 0;
+                            }
+                            align-items: center;
+                            .row{
+                                margin:20px 0;
+                                .col{
+                                    max-width: fit-content;
+                                    @include media-query(mobile){
+                                        margin: auto;
+                                    }
+                                }
+                                @include media-query(mobile) {
+                                    display: block;
+                                    margin: 20px 0 0 0;
+                                   }
+                                img{
+                                    width: 30px;
+                                    @include media-query(mobile) {
+                                        width: 22px;
+                                        margin: 8px;
+                                       }
+                                }
+                                p{
+                                    @include media-query(mobile) {
+                                        margin-left: 10px;
+                                       }
+                                }
+                            }
+                            
+                        }
+                    }
+                    .form{
+                        padding: 30px;
+                        background-color: $blue;
                         color: $grey;
-                        border-color: $darkBlue;
-                        &:hover{
-                            background-color: $grey;
-                            color: $blue;
-                            border-color: $grey;
+                        justify-content: space-between;
+                        input, textarea{
+                            margin-bottom: 45px;
+                            border-radius: 12px;
+                            font-size: 18px;
+                            line-height: normal;
+                            @include media-query(mobile){
+                                font-size: 14px;
+                                margin-bottom: 18px;
+                            }
+                        }
+                        button{
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            width: 100%;
+                            padding: 15px;
+                            margin: 0 0 30px 0;
+                            border-radius: 12px;
+                            background-color: $darkBlue;
+                            color: $grey;
+                            border-color: $darkBlue;
+                            @include media-query(mobile){
+                                font-size: 16px;
+                               padding: 12px;
+                            }
+                            &:hover{
+                                background-color: $grey;
+                                color: $blue;
+                                border-color: $grey;
+                            }
                         }
                     }
                 }
             }
+            
             
         }
       

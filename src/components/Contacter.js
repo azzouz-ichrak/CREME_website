@@ -16,22 +16,25 @@ const Contacter = () => {
         <Container fluid className="section-contact">
             <Container>
 
-                <Row>
+                <Row className="container-contact">
                     <Col className="coordonnees">
-                        <div className="top">
+                        <div className="coordonnees-titre">
                             <h2>Contactez-Nous</h2>
                             <img className="underTitle" src={underTitle} />
                             <p>Nous sommes ouverts à toute suggestion ou simplement pour discuter.</p>
                         </div>
-                        <div>
+                        <div  className="coordonnees-decription">
                             <Row>
-                                <img src={phone} /><p>(+216) 70 000 000 </p>
+                               <Col><img src={phone} /></Col>
+                               <Col><p>(+216) 70 000 000 </p></Col>
                             </Row>
                             <Row>
-                                <img src={msg} /><p>contact@creme.tn</p>
+                                <Col><img src={msg} /></Col>
+                                <Col><p>contact@creme.tn</p></Col>
                             </Row>
                             <Row>
-                                <img src={place} /><p>Place ALI Belhouane, Bab El Khadra Tunis 1006</p>
+                                <Col><img src={place} /></Col>
+                                <Col><p>Place ALI Belhouane, Bab El Khadra Tunis 1006</p></Col>
                             </Row>
                         </div>
                     </Col>
