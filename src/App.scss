@@ -895,8 +895,7 @@ a {
       width: 100%; }
 .section-contact {
   background-image: url("./components/images/bg-contact.png");
-  height: 670px;
-  background-size: contain; }
+  height: 855px; }
   .section-contact .row:first-child {
     padding: 70px 30px; }
     .section-contact .row:first-child .coordonnees {
@@ -921,31 +920,9 @@ a {
           width: 30px; }
         .section-contact .row:first-child .coordonnees .row p {
           margin-left: 20px; }
-    .section-contact .row:first-child .form {
+    .section-contact .row:first-child .message {
       padding: 30px;
-      background-color: #0061ab;
-      color: #eff3f7;
-      justify-content: space-between; }
-      .section-contact .row:first-child .form input, .section-contact .row:first-child .form textarea {
-        margin-bottom: 45px;
-        border-radius: 12px;
-        font-size: 18px;
-        line-height: normal; }
-      .section-contact .row:first-child .form button {
-        font-size: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 100%;
-        padding: 15px;
-        margin: 0 0 30px 0;
-        border-radius: 12px;
-        background-color: #152848;
-        color: #eff3f7;
-        border-color: #152848; }
-        .section-contact .row:first-child .form button:hover {
-          background-color: #eff3f7;
-          color: #0061ab;
-          border-color: #eff3f7; }
+      background-color: #0061ab; }
 
 #filter {
   padding: 30px;
@@ -955,4 +932,4 @@ a {
     #filter .container .row .col {
       text-align: center; }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=App.scss.map */

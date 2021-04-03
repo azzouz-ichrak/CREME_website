@@ -7,7 +7,7 @@ import Creme from './components/Creme'
 import Footer from './components/Footer'
 import Evenements from './components/Evenements'
 import Projets from './components/Projets'
-
+import Contacter from './components/Contacter'
 
 
 const Routing = () => {
@@ -26,6 +26,9 @@ const Routing = () => {
       </Route>
       <Route path='/activites/projets'>
         <Projets />
+      </Route>
+      <Route path='/contact'>
+        <Contacter />
       </Route>
 
     </Switch>
