@@ -1016,8 +1016,118 @@
                 }
             }
         }
+        &-one-event{
+            background-color: $grey;
+            padding: 70px 0;
+            color: $blue;
+            .row:nth-child(2){
+                margin-top: 20px;
+            }
+            .icon{
+                align-items: center;
+                .col{
+                    img{
+                        width: 28px;
+                        margin: 6px 2px;
+                        height: auto;
+                    }
+                    &:first-child{
+                        max-width: fit-content;
+                    }
+                    &:nth-child(2){
+                        p.date{
+                            text-transform: uppercase;
+                        }
+                        color: $green;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .description{
+                font-weight: 500;
+                text-align: justify;
+                margin-top: 20px;
+            }
+            .btn-reserver{
+                border: 0;
+                margin-top: 30px;
+                width: fit-content;
+                background-color: $green;
+                border-radius: 12px;
+                color: $grey;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+            .event-img{
+                text-align: center;
+                padding: 0 60px;
+                img{
+                    width: 100%;   
+                }
+            }
+
+        }
+        &-evenments-a-venir{
+            h1{
+                margin-top: 80px;
+                text-align: center;
+                color: $blue;
+            }
+        }
+        &-reservation{
+            background-color: $blue;
+            text-align: center;
+            padding:20px;
+            h1{
+                color: $grey;
+                font-size: 24px;
+            }
+            .form{
+                padding: 15px;
+                background-color: $blue;
+                color: $grey;
+                justify-content: space-between;
+                input, textarea{
+                    margin-bottom: 25px;
+                    border-radius: 12px;
+                    font-size: 18px;
+                    line-height: normal;
+                    @include media-query(mobile){
+                        font-size: 14px;
+                        margin-bottom: 18px;
+                    }
+                }
+                button{
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    width: 100%;
+                    padding: 15px;
+                    margin: 0 0 30px 0;
+                    border-radius: 12px;
+                    background-color: $darkBlue;
+                    color: $grey;
+                    border-color: $darkBlue;
+                    @include media-query(mobile){
+                        font-size: 16px;
+                       padding: 12px;
+                    }
+                    &:hover{
+                        background-color: $grey;
+                        color: $blue;
+                        border-color: $grey;
+                    }
+                }
+            }
+        }
       
         
+    }
+    .popup-content{
+        width: 35%;
     }
     #filter{
         padding: 30px;

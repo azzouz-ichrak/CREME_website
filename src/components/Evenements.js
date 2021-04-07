@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { Link } from 'react-router-dom'
 
 
 const Evenements = () => {
@@ -46,6 +47,7 @@ const Evenements = () => {
                         {
                             items.map(el=>{
                                 return(
+                                    <a href='/event-1'>
                                     <div className="evenement">
                                         <img src={event} />
                                         <h3>{el.date}</h3>
@@ -53,6 +55,7 @@ const Evenements = () => {
                                         <p>{el.decription}</p>
                                        <div className="lien-reserver"><a href="#">Réserver votre place</a></div> 
                                     </div>
+                                    </a>
                                 )
                             })
                         }
