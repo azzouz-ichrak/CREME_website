@@ -101,8 +101,7 @@
                     visibility: inherit;
                 }
             }
-            .nav-link a.btn-rejoindre:active,
-            .nav-link a.btn-rejoindre:focus {
+            .nav-link a.btn-rejoindre:active{
                 color: $grey !important;
             }
             .dropdown-toggle::after {
@@ -1122,6 +1121,24 @@
                     }
                 }
             }
+        }
+        &-projets{
+            text-align: center;
+            #link-projets{
+                margin: 80px 0 30px 0;
+                .link-projet{
+                    margin: 20px 30px;
+                    color: $blue;    
+                    opacity: 0.8;        
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: 16px;    
+                    &-active{
+                        opacity: 1;
+                    }
+                }
+            }
+            
         }
       
         
