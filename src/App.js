@@ -18,6 +18,9 @@ const Routing = () => {
       <Route exact path='/'>
         <Accueil />
       </Route>
+      <Route path='/home'>
+        <Accueil />
+      </Route>
       <Route path='/creme'>
         <Creme />
       </Route>

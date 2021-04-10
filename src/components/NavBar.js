@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import TopContact from './header/TopContact'
-import { Link } from 'react-router-dom'
+import { Link , NavLink} from 'react-router-dom'
 import logo from './images/logo-CREME-top.png'
 import subHover from './images/sub-menu-hover.png'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import $ from 'jquery'
 
 const NavBar = () => {
+
+  const [isActive, setActive] = useState("false");
+
+  const handleAdd = () => {
+   // setActive(!isActive);
+    $("a#basic-nav-dropdown").addClass("active");
+  };
+  const handleRemove = () => {
+    // setActive(!isActive);
+     $("a#basic-nav-dropdown").removeClass("active");
+   };
 
 
   return (
@@ -19,21 +31,16 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav  >
-            <Nav.Link> <Link to="/"  activeClassName="active">Accueil<span className="under-menu"></span></Link></Nav.Link>
-            <NavDropdown activeClassName='active' title="CREME" id="basic-nav-dropdown">
-              <NavDropdown.Item > <Link to="/creme">CREME</Link></NavDropdown.Item>
-              <NavDropdown.Item > <Link to="/creme">Mission</Link></NavDropdown.Item>
-              <NavDropdown.Item > <Link to="/creme">Objectifs</Link></NavDropdown.Item>
-              <NavDropdown.Item > <Link to="/creme">Membre du bureau exécutif</Link></NavDropdown.Item>
-              <NavDropdown.Item > <Link to="/creme">Partenariats</Link></NavDropdown.Item>
+            <Nav.Link> <NavLink to="/home" onClick={handleRemove} activeClassName="active">Accueil<span className="under-menu"></span></NavLink></Nav.Link>
+            <Nav.Link > <NavLink activeClassName="active" onClick={handleRemove}  to="/creme" activeClassName="active">CREME<span className="under-menu"></span></NavLink></Nav.Link>
+
+            <NavDropdown title="Activités" id="basic-nav-dropdown" >
+              <NavDropdown.Item > <NavLink onClick={handleAdd} activeClassName='active' to="/activites/evenements">évènements</NavLink></NavDropdown.Item>
+              <NavDropdown.Item > <NavLink  onClick={handleAdd} activeClassName='active' to="/activites/projets">Projets</NavLink></NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown activeClassName='active' title="Activités" id="basic-nav-dropdown">
-              <NavDropdown.Item > <Link to="/activites/evenements">évènements</Link></NavDropdown.Item>
-              <NavDropdown.Item > <Link to="/activites/projets">Projets</Link></NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link > <Link to="/" activeClassName="active">Actualités<span className="under-menu"></span></Link></Nav.Link>
-            <Nav.Link > <Link to="/contact"  activeClassName="active">Contactez-Nous<span className="under-menu"></span></Link></Nav.Link>
-            <Nav.Link> <Link to="/nous-rejoindre" className="btn-rejoindre">Nous rejoindre</Link></Nav.Link>
+            <Nav.Link > <NavLink activeClassName="active" onClick={handleRemove}  to="/actualites" activeClassName="active">Actualités<span className="under-menu"></span></NavLink></Nav.Link>
+            <Nav.Link > <NavLink activeClassName="active" onClick={handleRemove}  to="/contact"  activeClassName="active">Contactez-Nous<span className="under-menu"></span></NavLink></Nav.Link>
+            <Nav.Link> <Link to="/nous-rejoindre"onClick={handleRemove}  className="btn-rejoindre">Nous rejoindre</Link></Nav.Link>
           </Nav>
 
         </Navbar.Collapse>

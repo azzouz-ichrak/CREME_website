@@ -44,7 +44,7 @@ const Partenaires = ()=> {
       };
 
   return (
-    <div className="section-partenaires">
+    <div id="partenaires" className="section-partenaires">
                 <Container>
                 <Row ><h2>Ils nous font confiance</h2></Row>
                 <Row> <img src={underTitle} /></Row>

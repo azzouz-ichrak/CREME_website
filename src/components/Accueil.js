@@ -24,10 +24,10 @@ const Accueil = () => {
                     <Row> <img src={underTitle} /></Row>
                     <Row>
                         <Col className="act-1">
-                            <h2><a href="/" >évènements</a></h2>
+                            <h2><a href="/activites/evenements" >évènements</a></h2>
                         </Col>
                         <Col className="act-2"><h2>
-                            <a href="/" > projets</a>
+                            <a href="/activites/projets" > projets</a>
                         </h2></Col>
                     </Row>
                 </Container>
@@ -39,7 +39,7 @@ const Accueil = () => {
                         <h2>Voulez-vous nous rejoindre ?</h2>
                     </Row>
                     <Row>
-                        <h2 className="btn-rejoindre"><a href="/">Nous-rejoindre</a></h2>
+                        <h2 className="btn-rejoindre"><a href="/nous-rejoindre">Nous-rejoindre</a></h2>
                     </Row>
                 </Container>
             </div>
