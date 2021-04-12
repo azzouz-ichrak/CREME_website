@@ -36,7 +36,7 @@ const Routing = () => {
       <Route path='/nous-rejoindre'>
         <Rejoindre />
       </Route>
-      <Route path='/event-1'>
+      <Route path='/activites/evenements/event-1'>
         <OneEvenmt />
       </Route>
     </Switch>
