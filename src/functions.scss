@@ -27,7 +27,6 @@ input::placeholder {
     margin: 0;
     padding: 0;
 }
-
 //  --------- mixin function --------
 
 @mixin flexibleRow() {
@@ -116,3 +115,10 @@ $media-queries: (
     }
   
   }
+
+  
+h1{
+  @include media-query(mobile){
+    font-size: 30px;
+  }
+}
