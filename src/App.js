@@ -10,6 +10,7 @@ import Projets from './components/Projets'
 import Contacter from './components/Contacter'
 import Rejoindre from './components/Rejoindre'
 import OneEvenmt from './components/evenement/OneEvenmt'
+import OneProject from './components/projets/OneProject'
 const Routing = () => {
 
   return (
@@ -38,6 +39,9 @@ const Routing = () => {
       </Route>
       <Route path='/event-1'>
         <OneEvenmt />
+      </Route>
+      <Route path='/projet-1'>
+        <OneProject />
       </Route>
     </Switch>
   )
