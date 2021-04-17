@@ -6,7 +6,7 @@ import Pagination from "react-js-pagination"
 
 const EnCours = () => {
     const [dateFin, setDateFin] = useState(new Date());
-   
+
     const projets = [
         {
             titre: "Tunisian Smart Cities 1",
@@ -73,18 +73,18 @@ const EnCours = () => {
 
     console.log(currentProjet);
     const renderProjet = currentProjet.map(filteredProj => (
-            <a href="/projet-1">
-                <div className="evenement">
-                    <img src={projetIMG} />
-                    <h3>{filteredProj.datedebut} - {filteredProj.datefin}</h3>
-                    <h2>{filteredProj.titre}</h2>
-                    <p>{filteredProj.decription}</p>
-                    <div className="lien-reserver">
-                        <a href="#">Voir plus</a>
-                    </div>
+        <a href="/projet-1">
+            <div className="evenement">
+                <img src={projetIMG} />
+                <h3>{filteredProj.datedebut} - {filteredProj.datefin}</h3>
+                <h2>{filteredProj.titre}</h2>
+                <p>{filteredProj.decription}</p>
+                <div className="lien-reserver">
+                    <a href="#">Voir plus</a>
                 </div>
-            </a>
-        ));
+            </div>
+        </a>
+    ));
 
     const handlePageChange = (pageNumber) => {
         console.log(`active page is ${pageNumber}`);

@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import Popup from "reactjs-popup";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import calendar from "../images/calendar.png";
-
 import actIMG from "../images/act2.png"
 const OneProject = () => {
     return (

@@ -15,9 +15,7 @@ const Creme = () => {
     const title = 'Association tunisienne depuis 1983'
     return (
         <Container fluid>
-
-           <Banner title={title}/>
-
+            <Banner title={title} />
             <div className="section-creme">
                 <Container>
                     <Row>
@@ -42,26 +40,26 @@ const Creme = () => {
                 </Container>
                 <Container>
                     <Col>
-                    <Row><h2>CREME</h2></Row>
-                            <Row><img src={underTitle} /></Row>
-                            <Row className="image-creme">
-                                <img src={imageGroup} alt="CREME association tunisienne" />
-                            </Row>
-                            <Row>
-                                <p>
-                                    Nous assurons la consolidation des liens de rencontre et d’entraide
-                                    en Tunisie et à l’étranger entre les originaires de la ville Metouia
+                        <Row><h2>CREME</h2></Row>
+                        <Row><img src={underTitle} /></Row>
+                        <Row className="image-creme">
+                            <img src={imageGroup} alt="CREME association tunisienne" />
+                        </Row>
+                        <Row>
+                            <p>
+                                Nous assurons la consolidation des liens de rencontre et d’entraide
+                                en Tunisie et à l’étranger entre les originaires de la ville Metouia
 
-                                    Le Club de Rencontre et d’Entraide Metoui, CREME, assure la consolidation des liens de rencontre et d’entraide en Tunisie et à l’étranger entre les originaires de la ville Metouia (Gouvernorat Gabes, Tunisie).
-                                    CREME organise des colloques culturels, scientifiques et socio-économiques ainsi que des visites culturelles et scientifiques des sites naturels et archéologiques
+                                Le Club de Rencontre et d’Entraide Metoui, CREME, assure la consolidation des liens de rencontre et d’entraide en Tunisie et à l’étranger entre les originaires de la ville Metouia (Gouvernorat Gabes, Tunisie).
+                                CREME organise des colloques culturels, scientifiques et socio-économiques ainsi que des visites culturelles et scientifiques des sites naturels et archéologiques
                                 </p></Row>
                     </Col>
-                    </Container> 
+                </Container>
             </div>
             <div className="section-mission">
                 <Container>
                     <Row>
-                    <Col>
+                        <Col>
                             <Row className="image-creme">
                                 <img src={missionCreme} alt="CREME association tunisienne" />
                             </Row>
@@ -82,26 +80,26 @@ const Creme = () => {
                 </Container>
                 <Container>
                     <Col>
-                    <Row><h2>Missions</h2></Row>
-                            <Row><img src={underTitle} /></Row>
-                            <Row className="image-creme">
-                                <img src={missionCreme} alt="CREME association tunisienne" />
-                            </Row>
-                            <Row>
-                                <p>
-                                    Nous assurons la consolidation des liens de rencontre et d’entraide
-                                    en Tunisie et à l’étranger entre les originaires de la ville Metouia
+                        <Row><h2>Missions</h2></Row>
+                        <Row><img src={underTitle} /></Row>
+                        <Row className="image-creme">
+                            <img src={missionCreme} alt="CREME association tunisienne" />
+                        </Row>
+                        <Row>
+                            <p>
+                                Nous assurons la consolidation des liens de rencontre et d’entraide
+                                en Tunisie et à l’étranger entre les originaires de la ville Metouia
 
-                                    Le Club de Rencontre et d’Entraide Metoui, CREME, assure la consolidation des liens de rencontre et d’entraide en Tunisie et à l’étranger entre les originaires de la ville Metouia (Gouvernorat Gabes, Tunisie).
-                                    CREME organise des colloques culturels, scientifiques et socio-économiques ainsi que des visites culturelles et scientifiques des sites naturels et archéologiques
+                                Le Club de Rencontre et d’Entraide Metoui, CREME, assure la consolidation des liens de rencontre et d’entraide en Tunisie et à l’étranger entre les originaires de la ville Metouia (Gouvernorat Gabes, Tunisie).
+                                CREME organise des colloques culturels, scientifiques et socio-économiques ainsi que des visites culturelles et scientifiques des sites naturels et archéologiques
                                     </p></Row>
                     </Col>
                 </Container>
             </div>
 
-                <Objectifs />
-                <Membres />
-                <Partenaires /> 
+            <Objectifs />
+            <Membres />
+            <Partenaires />
 
         </Container>
     )

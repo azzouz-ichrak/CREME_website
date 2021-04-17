@@ -12,11 +12,10 @@ import OneEvenmt from './components/evenement/OneEvenmt'
 import OneProject from './components/projets/OneProject'
 import Actualites from './components/Actualites'
 import OneAct from './components/actualites/OneAct'
-const Routing = () => {
 
+const Routing = () => {
   return (
     <Switch>
-
       <Route exact path='/'>
         <Accueil />
       </Route>
@@ -53,7 +52,6 @@ const Routing = () => {
     </Switch>
   )
 }
-
 function App() {
   return (
     <>
@@ -64,8 +62,6 @@ function App() {
       <Footer />
     </>
   );
-
-
 }
 
 

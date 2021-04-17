@@ -1,124 +1,117 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "reactjs-popup/dist/index.css";
+
 //  --------- colors --------
 $blue: #0061ab;
 $darkBlue: #152848;
-$lightBlue : #b4c8d833;
+$lightBlue: #b4c8d833;
 $lightBlueOpacity: #0061ab66;
 $green: #66a344;
 $white: #ffffff;
 $grey: #eff3f7;
 $borderColor: #f5f5f5;
 
-
 //  --------- commun elements --------
 * {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-a{
-    text-decoration: none;
-    color: $blue;
+a {
+  text-decoration: none;
+  color: $blue;
 }
 input::placeholder {
   color: $lightBlueOpacity;
 }
-.container-fluid, p, .row {
-    margin: 0;
-    padding: 0;
+.container-fluid,
+p,
+.row {
+  margin: 0;
+  padding: 0;
 }
 //  --------- mixin function --------
 
 @mixin flexibleRow() {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 @mixin pFooter() {
-    color: $white;
-    text-align: justify;
+  color: $white;
+  text-align: justify;
 }
 @mixin boxShadow() {
-    box-shadow: 3px 3px 6px #00000029;
+  box-shadow: 3px 3px 6px #00000029;
 }
 @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-  }
-@mixin section() {
-    padding: 80px 0;
-    @include media-query(mobile) {
-      padding: 20px 0;
-     }
-     @include media-query(tablet) {
-      padding: 40px;
-     }
-    .row{
-        margin-bottom: 20px;
-        @include media-query(mobile) {
-          margin-bottom: 12px;
-         }
-        h2,img,h3{
-            margin: auto;
-            color: $blue;
-            text-align: center ;
-        }
-        h2{
-          @include media-query(mobile) {
-           font-size: 18px;
-          }
-        }
-        h3{
-            font-size: 20px;
-            @include media-query(mobile) {
-              font-size: 16px;
-            }
-        }
-        p {
-          font-size: 14px;
-          text-align: justify;
-          color: $darkBlue
-      }
-    }
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
-
-//  --------- media-query --------
-
-$media-queries: (
-    tablet: (
-      breakpoint: '(min-width: 480px) and (max-width: 768px)',
-    ),
-    mobile: (
-      breakpoint: '(min-width: 320px) and (max-width: 480px)'
-    )
-  );
-  
-  @mixin media-query ($size) {
-  
-    @each $item, $value in $media-queries {
-  
-      @if $item == $size {
-  
-        @if map-get($value, breakpoint) != null {
-  
-          @media only screen and #{map-get($value, breakpoint)} {
-  
-            @content;
-  
-          }
-  
-        }
-  
-      }
-  
-    }
-  
+@mixin section() {
+  padding: 80px 0;
+  @include media-query(mobile) {
+    padding: 20px 0;
   }
-
-  
-h1{
-  @include media-query(mobile){
+  @include media-query(tablet) {
+    padding: 40px;
+  }
+  .row {
+    margin-bottom: 20px;
+    @include media-query(mobile) {
+      margin-bottom: 12px;
+    }
+    h2,
+    img,
+    h3 {
+      margin: auto;
+      color: $blue;
+      text-align: center;
+    }
+    h2 {
+      @include media-query(mobile) {
+        font-size: 18px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      @include media-query(mobile) {
+        font-size: 16px;
+      }
+    }
+    p {
+      font-size: 14px;
+      text-align: justify;
+      color: $darkBlue;
+    }
+  }
+}
+//  --------- media-query --------
+$media-queries: (
+  tablet: (
+    breakpoint: "(min-width: 480px) and (max-width: 768px)",
+  ),
+  mobile: (
+    breakpoint: "(min-width: 320px) and (max-width: 480px)",
+  ),
+);
+@mixin media-query($size) {
+  @each $item, $value in $media-queries {
+    @if $item == $size {
+      @if map-get($value, breakpoint) != null {
+        @media only screen and #{map-get($value, breakpoint)} {
+          @content;
+        }
+      }
+    }
+  }
+}
+h1 {
+  @include media-query(mobile) {
     font-size: 30px;
   }
 }

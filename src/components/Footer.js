@@ -1,5 +1,4 @@
 import React from 'react';
-
 import logo from './images/logo-footer.png'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -57,20 +56,20 @@ const Footer = () => {
 
                     </Col>
                     <Col className="footer-top-newsletter">
-                    <Row>
-                        <Form>
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Recevez nos dernières actualités</Form.Label>
-                                <Form.Control type="email" placeholder="Email *" />
-                                
-                            </Form.Group>
-                            <Button variant="primary" type="submit">
-                            s'inscrire
+                        <Row>
+                            <Form>
+                                <Form.Group controlId="formBasicEmail">
+                                    <Form.Label>Recevez nos dernières actualités</Form.Label>
+                                    <Form.Control type="email" placeholder="Email *" />
+
+                                </Form.Group>
+                                <Button variant="primary" type="submit">
+                                    s'inscrire
                              </Button>
-                        </Form>
-                    </Row>
+                            </Form>
+                        </Row>
                     </Col>
-                    
+
                 </Row>
                 <Row className="footer-copyrights">
                     <p>© 2021- CREME - ALL RIGHTS RESERVED</p>

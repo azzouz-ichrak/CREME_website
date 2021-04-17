@@ -2,7 +2,6 @@ import React from 'react';
 import CarouselNews from './header/Carousel'
 import Container from 'react-bootstrap/Container'
 import underTitle from './images/under-title.png'
-import imageGroup from './images/creme.png'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import act from './images/act.png'
@@ -15,7 +14,7 @@ const Accueil = () => {
         <Container fluid id="accueil">
             <CarouselNews />
 
-            
+
             <Apropos />
             <Objectifs />
             <div className="section-activites">
@@ -80,8 +79,8 @@ Bravo à tous et à M Jalel B Romdhane en particulier qui a eu cette idée pour 
                 </Row>
 
             </Container>
-      
-                <Partenaires />
+
+            <Partenaires />
         </Container>
 
     )

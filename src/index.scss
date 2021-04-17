@@ -120,13 +120,6 @@
                 }
                
             }
-            .dropdown-toggle .nav-link{
-                &::after{
-                    [aria-expanded= true ]{
-                        color: red !important;
-                    }
-                }
-            }
             .nav-link a.btn-rejoindre:active {
                 color: $grey !important;
             }
@@ -149,101 +142,6 @@
     .under-menu {
         visibility: inherit !important;
     }
-}
-#header-menu-2 {
-    justify-content: space-between;
-    z-index: 9999;
-    .logo-brand {
-        margin: auto;
-        margin-left: 0;
-        @include media-query(mobile) {
-            width: 50%;
-        }
-        img {
-            width: 70%;
-            @include media-query(mobile) {
-                width: 80%;
-            }
-        }
-    }
-
-    .nav {
-        display: inline-block;
-        margin: AUTO;
-        margin-right: 0;
-        color: $blue;
-        text-align: left;
-        .under-menu {
-            content: url("./components/images/under-menu.png");
-            display: block;
-            margin-top: 0;
-            position: absolute;
-            visibility: hidden;
-        }
-        .nav__menu {
-            line-height: 45px;
-            font-weight: 700;
-            text-transform: uppercase;
-            .nav__menu-item {
-                display: inline-block;
-                position: relative;
-                color: $blue;
-                text-transform: capitalize;
-
-                &:hover {
-                    .under-menu {
-                        visibility: inherit;
-                    }
-                    .nav__submenu {
-                        display: block;
-                    }
-                }
-            }
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 0;
-            margin-bottom: 0;
-            a {
-                display: block;
-                font-weight: 500;
-                font-size: 14px;
-                padding: 0 16px;
-                line-height: inherit;
-                cursor: pointer;
-            }
-        }
-    }
-    .nav__submenu {
-        z-index: 9999;
-        font-weight: 300;
-        text-transform: none;
-        display: none;
-        position: absolute;
-        width: max-content;
-        background-color: $white;
-        &-item {
-            &:hover {
-                background-color: $grey;
-            }
-        }
-    }
-    .active {
-        outline: none;
-        color: $green !important;
-        .under-menu {
-            visibility: inherit;
-        }
-    }
-    .btn-rejoindre {
-        background-color: $green;
-        padding: 10px 18px;
-        @include border-radius(12px);
-        color: $grey !important;
-    }
-
-    // nav on mobile
 }
 //  --------- Footer --------
 #footer {
@@ -1354,7 +1252,7 @@
     }
     &-one-projet{
             background-color: $grey;
-            padding: 70px 0;
+            padding: 70px 0 !important;
             color: $blue;
             @include media-query(mobile){
                 padding: 20px 0;

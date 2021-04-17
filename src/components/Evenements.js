@@ -6,7 +6,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
 import Pagination from "react-js-pagination";
 
 const Evenements = () => {
@@ -74,17 +73,17 @@ const Evenements = () => {
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
     },
     {
-        titre: "event 11",
-        date: "27 Février 2021",
-        decription:
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
-      },
-      {
-        titre: "event 12",
-        date: "27 Février 2021",
-        decription:
-          "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
-      },
+      titre: "event 11",
+      date: "27 Février 2021",
+      decription:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
+    },
+    {
+      titre: "event 12",
+      date: "27 Février 2021",
+      decription:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
+    },
   ];
 
   const eventPerPage = 6;
@@ -127,7 +126,7 @@ const Evenements = () => {
               />
             </Col>
             <Col>
-              <input className="input-localisation" type="text" placeholder="Où ?"/>
+              <input className="input-localisation" type="text" placeholder="Où ?" />
             </Col>
           </Row>
         </Container>
@@ -137,13 +136,13 @@ const Evenements = () => {
         {renderEvent}
       </Container>
       <Container>
-      <div className="pagination">
+        <div className="pagination">
           <span>Pages </span>
           <Pagination
             activePage={activePage}
-         //   itemsCountPerPage={3}
+            //   itemsCountPerPage={3}
             totalItemsCount={event.length}
-           // pageRangeDisplayed={ 6 }
+            // pageRangeDisplayed={ 6 }
             onChange={handlePageChange}
           />
         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -23,10 +22,10 @@ const Contacter = () => {
                             <img className="underTitle" src={underTitle} />
                             <p>Nous sommes ouverts à toute suggestion ou simplement pour discuter.</p>
                         </div>
-                        <div  className="coordonnees-decription">
+                        <div className="coordonnees-decription">
                             <Row>
-                               <Col><img src={phone} /></Col>
-                               <Col><p>(+216) 70 000 000 </p></Col>
+                                <Col><img src={phone} /></Col>
+                                <Col><p>(+216) 70 000 000 </p></Col>
                             </Row>
                             <Row>
                                 <Col><img src={msg} /></Col>
@@ -44,8 +43,8 @@ const Contacter = () => {
                             <Form.Control size="lg" type="email" placeholder="Email" />
                             <Form.Control size="lg" as="textarea" placeholder="Message" rows={5} />
                         </Form.Group>
-                        <Button  type="submit">
-                        envoyer
+                        <Button type="submit">
+                            envoyer
                         </Button>
                     </Col>
                 </Row>
