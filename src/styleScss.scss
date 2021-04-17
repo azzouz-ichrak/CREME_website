@@ -76,7 +76,13 @@
                     display: flex;
                 }
             }
-            
+            .dropdown .dropdown-item {
+                padding: 0 !important;
+                width: 100%;
+            }
+            .dropdown .dropdown-item>a {
+                padding: 10px 24px !important;
+            }
             .dropdown-item.active, .dropdown-item:active{
                 background-color: $grey !important;
             }
@@ -1361,6 +1367,7 @@
             }
             h1{
                 margin: auto;
+                text-align: center;
                 @include media-query(mobile){
                     margin: 0;
                     font-size: 30px;

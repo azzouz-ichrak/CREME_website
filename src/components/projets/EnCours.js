@@ -6,21 +6,7 @@ import Pagination from "react-js-pagination"
 
 const EnCours = () => {
     const [dateFin, setDateFin] = useState(new Date());
-    const formaDate = new Intl.DateTimeFormat('fr-FR').format(dateFin);
-    console.log(formaDate);
-    const compare ="27/04/2030";
-    console.log('y = '+compare);
-    console.log('x = '+formaDate);
-
-    console.log('x < y', formaDate <= compare);
-    console.log('x > y', formaDate >= compare);
-    console.log('+x <= +y', +formaDate <= +compare);
-    console.log('+x <= +y', +formaDate >= +compare);
-
-
-   const date = new Date();
-   console.log( Intl.DateTimeFormat('fr-FR').format(date))
-
+   
     const projets = [
         {
             titre: "Tunisian Smart Cities 1",
@@ -86,10 +72,7 @@ const EnCours = () => {
     const currentProjet = projets.slice(indexOfFirstTodo, indexOfLastTodo);
 
     console.log(currentProjet);
-    const renderProjet = currentProjet
-        .filter(proj => proj.datefin > formaDate)
-        .map(filteredProj => (
-
+    const renderProjet = currentProjet.map(filteredProj => (
             <a href="/projet-1">
                 <div className="evenement">
                     <img src={projetIMG} />

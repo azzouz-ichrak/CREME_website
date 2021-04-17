@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from './components/NavBar'
-//import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Accueil from './components/Accueil'
 import Creme from './components/Creme'
@@ -11,6 +10,8 @@ import Contacter from './components/Contacter'
 import Rejoindre from './components/Rejoindre'
 import OneEvenmt from './components/evenement/OneEvenmt'
 import OneProject from './components/projets/OneProject'
+import Actualites from './components/Actualites'
+import OneAct from './components/actualites/OneAct'
 const Routing = () => {
 
   return (
@@ -42,6 +43,12 @@ const Routing = () => {
       </Route>
       <Route path='/projet-1'>
         <OneProject />
+      </Route>
+      <Route path='/actualites'>
+        <Actualites />
+      </Route>
+      <Route path='/actualite-1'>
+        <OneAct />
       </Route>
     </Switch>
   )
