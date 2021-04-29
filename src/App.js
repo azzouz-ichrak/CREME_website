@@ -37,16 +37,16 @@ const Routing = () => {
       <Route path='/nous-rejoindre'>
         <Rejoindre />
       </Route>
-      <Route path='/event-1'>
+      <Route path='/activites/evenements/event-1'>
         <OneEvenmt />
       </Route>
-      <Route path='/projet-1'>
+      <Route path='/activites/projets/projet-1'>
         <OneProject />
       </Route>
       <Route path='/actualites'>
         <Actualites />
       </Route>
-      <Route path='/actualite-1'>
+      <Route path='/actualites/actualite-1'>
         <OneAct />
       </Route>
     </Switch>

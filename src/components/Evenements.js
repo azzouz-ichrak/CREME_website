@@ -96,7 +96,7 @@ const Evenements = () => {
 
   const renderEvent = currentEvent.map((el) => {
     return (
-      <a href="/event-1">
+      <a href="/activites/evenements/event-1">
         <div className="evenement">
           <img src={eventIMG} />
           <h3>{el.date}</h3>
