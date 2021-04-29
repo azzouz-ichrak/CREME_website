@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CREME_website/static/css/main.f055a63e.chunk.css",
-    "main.js": "/CREME_website/static/js/main.1cceb6ca.chunk.js",
-    "main.js.map": "/CREME_website/static/js/main.1cceb6ca.chunk.js.map",
+    "main.js": "/CREME_website/static/js/main.7c590141.chunk.js",
+    "main.js.map": "/CREME_website/static/js/main.7c590141.chunk.js.map",
     "runtime-main.js": "/CREME_website/static/js/runtime-main.18a0bb71.js",
     "runtime-main.js.map": "/CREME_website/static/js/runtime-main.18a0bb71.js.map",
     "static/css/2.ecb13d93.chunk.css": "/CREME_website/static/css/2.ecb13d93.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.ecb13d93.chunk.css",
     "static/js/2.0f1adf9d.chunk.js",
     "static/css/main.f055a63e.chunk.css",
-    "static/js/main.1cceb6ca.chunk.js"
+    "static/js/main.7c590141.chunk.js"
   ]
 }
