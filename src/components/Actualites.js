@@ -54,7 +54,7 @@ const Actualites = () => {
 
     const renderProjet = currentProjet.map((el) => {
         return (
-            <a href="/actualites/actualite-1">
+            <a href="/actualite-1">
                 <div className="evenement">
                     <img src={actIMG} />
                     <h3>{el.date}</h3>

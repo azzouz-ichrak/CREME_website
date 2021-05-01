@@ -94,7 +94,7 @@ const Tout = () => {
 
     const renderProjet = currentProjet.map((el) => {
         return (
-            <a href="/activites/projets/projet-1">
+            <a href="/projets/projet-1">
                 <div className="evenement">
                     <img src={projetIMG} />
                     <h3>{el.datedebut} - {el.datefin}</h3>

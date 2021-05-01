@@ -73,7 +73,7 @@ const EnCours = () => {
 
     console.log(currentProjet);
     const renderProjet = currentProjet.map(filteredProj => (
-        <a href="/projet-1">
+        <a href="/projets/projet-1">
             <div className="evenement">
                 <img src={projetIMG} />
                 <h3>{filteredProj.datedebut} - {filteredProj.datefin}</h3>
