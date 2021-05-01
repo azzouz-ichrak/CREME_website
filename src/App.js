@@ -46,7 +46,7 @@ const Routing = () => {
       <Route path='/actualites'>
         <Actualites />
       </Route>
-      <Route path='/CREME_website/actualites/actualite-1'>
+      <Route path='/actualites/actualite-1'>
         <OneAct />
       </Route>
     </Switch>
