@@ -62,7 +62,7 @@
     #basic-navbar-nav {
         justify-content: flex-end;
         .navbar-nav {
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 text-align: center;
             }
             .nav-link a,
@@ -71,7 +71,7 @@
                 text-transform: capitalize;
                 font-weight: 500;
                 font-size: 14px;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     justify-content: center;
                     display: flex;
                 }
@@ -80,10 +80,11 @@
                 padding: 0 !important;
                 width: 100%;
             }
-            .dropdown .dropdown-item>a {
+            .dropdown .dropdown-item > a {
                 padding: 10px 24px !important;
             }
-            .dropdown-item.active, .dropdown-item:active{
+            .dropdown-item.active,
+            .dropdown-item:active {
                 background-color: $grey !important;
             }
             .btn-rejoindre {
@@ -103,7 +104,7 @@
                 margin-top: 8px;
                 position: absolute;
                 visibility: hidden;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     margin-top: 22px;
                 }
             }
@@ -118,7 +119,6 @@
                 .under-menu {
                     visibility: inherit;
                 }
-               
             }
             .nav-link a.btn-rejoindre:active {
                 color: $grey !important;
@@ -134,7 +134,6 @@
             }
         }
     }
- 
 }
 .active {
     outline: none;
@@ -653,6 +652,72 @@
     }
     &-membres {
         @include section();
+        #team {
+            background-color: $grey;
+            .container {
+                padding: 0;
+                padding-bottom: 20px;
+                .row {
+                    &:first-child {
+                        padding: 45px 0 !important;
+                    }
+                    h2 {
+                      //  font-size: 45px;
+                        font-weight: 700;
+                        text-align: center;
+                        margin: auto;
+                        color: $blue;
+                    }
+                    .one-team {
+                        &:hover {
+                            img {
+                                &:first-child {
+                                    transform: scale(1.05);
+                                }
+                            }
+                            .descr {
+                                transform: translateY(-110px);
+                                color: $blue;
+                            }
+                        }
+                        img {
+                            &:first-child {
+                                transition: all 0.3s ease;
+                                margin: 0;
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .descr {
+                            background-color: white;
+                            color: $blue;
+                            text-align: center;
+                            position: relative;
+                            padding: 10px;
+                            margin: 0 30px 0;
+                            z-index: 2;
+                            transform: translateY(-60px);
+                            transition: all 0.3s ease;
+                            h4 {
+                                font-size: 18px;
+                                font-weight: 700;
+                                margin-bottom: 1px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                            .social-media {
+                                img {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* @include section();
         #membres {
             margin-top: 30px;
         }
@@ -788,6 +853,7 @@
                 padding: 16px 32px;
             }
         }
+        */
     }
     &-evenements {
         @include section();
@@ -1033,110 +1099,110 @@
             }
         }
     }
-    &-one-event{
+    &-one-event {
         background-color: $grey;
         padding: 70px 0;
         color: $blue;
-        @include media-query(mobile){
+        @include media-query(mobile) {
             padding: 20px 0;
         }
-        h1{
+        h1 {
             margin: auto;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 margin: 0;
                 font-size: 30px;
             }
         }
-        .top-event{
+        .top-event {
             margin: 0 70px;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 margin: 0;
             }
         }
-        .between{
+        .between {
             margin: 0 30px;
             padding: 10px 0;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 margin: 0;
             }
         }
-        #details{
+        #details {
             justify-content: center;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 justify-content: space-between !important;
                 margin: 10px 0;
             }
         }
-        .details{
+        .details {
             display: flex;
             flex-direction: row;
             align-items: center;
             margin: 10px 0;
-            p{
+            p {
                 color: $green;
                 font-weight: 500;
                 font-size: 22px;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     font-size: 16px;
                 }
             }
-            .icon{
-                img{
+            .icon {
+                img {
                     margin: 5px 20px 5px 0;
                     width: 28px;
                     height: auto;
-                    @include media-query(mobile){
+                    @include media-query(mobile) {
                         margin: 5px 5px 5px 0;
                         width: 20px;
                     }
                 }
             }
         }
-        .img-event{
+        .img-event {
             margin: 20px 0;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 margin: 8px 0;
             }
-            img{
+            img {
                 border-radius: 12px;
                 width: 100%;
             }
         }
-        .bottom{
+        .bottom {
             align-items: center;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 flex-direction: column-reverse;
             }
-            @include media-query(tablet){
+            @include media-query(tablet) {
                 flex-direction: column-reverse;
             }
         }
-        .description{
+        .description {
             margin-top: 20px;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 padding: 0;
                 text-align: center;
             }
-            @include media-query(tablet){
+            @include media-query(tablet) {
                 padding: 0;
             }
-            span{
+            span {
                 color: $green;
                 font-weight: 500;
                 font-size: 22px;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     font-size: 16px;
                 }
             }
-            p{
-                font-weight: 500; 
+            p {
+                font-weight: 500;
                 text-align: justify;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     font-size: 12px;
                 }
             }
         }
-        .btn-popup{
+        .btn-popup {
             max-width: fit-content;
             height: fit-content;
             @include boxShadow();
@@ -1146,7 +1212,7 @@
             flex-direction: column;
             display: flex;
             align-items: center;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 padding: 0 15px;
             }
             .btn-reserver {
@@ -1161,7 +1227,7 @@
                 text-transform: uppercase;
                 font-size: 22px;
                 padding: 10px 25px;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     margin-top: 0;
                     font-size: 18px;
                 }
@@ -1169,8 +1235,8 @@
         }
     }
     &-evenments-a-venir {
-        .section-evenements{
-            padding-top:0 !important;
+        .section-evenements {
+            padding-top: 0 !important;
         }
         h1 {
             margin-top: 80px;
@@ -1250,102 +1316,102 @@
             }
         }
     }
-    &-one-projet{
-            background-color: $grey;
-            padding: 70px 0 !important;
-            color: $blue;
-            @include media-query(mobile){
-                padding: 20px 0;
+    &-one-projet {
+        background-color: $grey;
+        padding: 70px 0 !important;
+        color: $blue;
+        @include media-query(mobile) {
+            padding: 20px 0;
+        }
+        #projet {
+            margin: 0 70px;
+            @include media-query(mobile) {
+                margin: 0;
             }
-            #projet{
-                margin: 0 70px;
-                @include media-query(mobile){
-                    margin: 0;
-                }
-            }
-            h1{
-                margin: auto;
+        }
+        h1 {
+            margin: auto;
+            text-align: center;
+            @include media-query(mobile) {
+                margin: 0;
+                font-size: 30px;
                 text-align: center;
-                @include media-query(mobile){
-                    margin: 0;
-                    font-size: 30px;
-                    text-align: center;
-                }
             }
-            .details{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin: 10px auto;
-                @include media-query(mobile){
-                    justify-content: space-between !important;
-                    //margin: 10px 0;
-                    margin: auto;
-                }
-            p{
+        }
+        .details {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px auto;
+            @include media-query(mobile) {
+                justify-content: space-between !important;
+                //margin: 10px 0;
+                margin: auto;
+            }
+            p {
                 color: $green;
                 font-weight: 500;
                 font-size: 22px;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     font-size: 16px;
                 }
             }
-            .icon{
-                img{
+            .icon {
+                img {
                     margin: 5px 20px 5px 0;
                     width: 28px;
                     height: auto;
-                    @include media-query(mobile){
+                    @include media-query(mobile) {
                         margin: 5px 5px 5px 0;
                         width: 20px;
                     }
                 }
             }
+        }
+        .img-projet {
+            margin: 20px 0;
+            @include media-query(mobile) {
+                margin: 8px 0;
             }
-            .img-projet{
-                margin: 20px 0;
-                @include media-query(mobile){
-                    margin: 8px 0;
-                }
-                img{
-                    border-radius: 12px;
-                    width: 100%;
-                }
+            img {
+                border-radius: 12px;
+                width: 100%;
             }
-            .description{
-                margin-top: 20px;
-                @include media-query(mobile){
-                    padding: 0;
-                    text-align: center;
-                }
-                @include media-query(tablet){
-                    padding: 0;
-                }
-                span{
-                    color: $green;
-                    font-weight: 500;
-                    font-size: 22px;
-                    @include media-query(mobile){
-                        font-size: 16px;
-                    }
-                }
-                p{
-                    font-weight: 500; 
-                    text-align: justify;
-                    @include media-query(mobile){
-                        font-size: 12px;
-                    }
+        }
+        .description {
+            margin-top: 20px;
+            @include media-query(mobile) {
+                padding: 0;
+                text-align: center;
+            }
+            @include media-query(tablet) {
+                padding: 0;
+            }
+            span {
+                color: $green;
+                font-weight: 500;
+                font-size: 22px;
+                @include media-query(mobile) {
+                    font-size: 16px;
                 }
             }
+            p {
+                font-weight: 500;
+                text-align: justify;
+                @include media-query(mobile) {
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
 .popup-content {
-   width: 40% !important;
-   padding: 0;
-   border-radius: 0 !important;
-   border-color: $blue;
-   height: auto !important;
-   background-color: $blue !important;
+    width: 40% !important;
+    padding: 0;
+    border-radius: 0 !important;
+    border-color: $blue;
+    height: auto !important;
+    background-color: $blue !important;
 }
 #filter {
     padding: 30px;
@@ -1353,12 +1419,12 @@
     .container {
         .row {
             margin: 0 22%;
-            @include media-query(mobile){
+            @include media-query(mobile) {
                 margin: 0;
             }
             .col {
                 text-align: center;
-                @include media-query(mobile){
+                @include media-query(mobile) {
                     margin: 8px 0;
                 }
             }
