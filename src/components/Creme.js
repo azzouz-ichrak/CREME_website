@@ -20,7 +20,7 @@ const Creme = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <Row><h2>CREME</h2></Row>
+                            <Row><h2>Histoire</h2></Row>
                             <Row><img src={underTitle} /></Row>
                             <Row>
                                 <p>
@@ -40,7 +40,7 @@ const Creme = () => {
                 </Container>
                 <Container>
                     <Col>
-                        <Row><h2>CREME</h2></Row>
+                        <Row><h2>Histoire</h2></Row>
                         <Row><img src={underTitle} /></Row>
                         <Row className="image-creme">
                             <img src={imageGroup} alt="CREME association tunisienne" />
@@ -65,7 +65,7 @@ const Creme = () => {
                             </Row>
                         </Col>
                         <Col>
-                            <Row><h2>Missions</h2></Row>
+                            <Row><h2>Nos valeurs</h2></Row>
                             <Row><img src={underTitle} /></Row>
                             <Row>
                                 <p>
@@ -80,7 +80,7 @@ const Creme = () => {
                 </Container>
                 <Container>
                     <Col>
-                        <Row><h2>Missions</h2></Row>
+                        <Row><h2>Nos valeurs</h2></Row>
                         <Row><img src={underTitle} /></Row>
                         <Row className="image-creme">
                             <img src={missionCreme} alt="CREME association tunisienne" />
@@ -96,8 +96,8 @@ const Creme = () => {
                     </Col>
                 </Container>
             </div>
-
-            <Objectifs />
+            {/* <Objectifs /> */}
+            
             <Membres />
             <Partenaires />
 
